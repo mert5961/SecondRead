@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Right upper lobe nodule\", \"organ\": \"lung\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 46, \"short_mm\": 38}, {\"exam\": 1, \"long_mm\": 28, \"short_mm\": 23}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 2.0
+}

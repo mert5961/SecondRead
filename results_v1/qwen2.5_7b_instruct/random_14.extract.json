@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Subcarinal lymph node\", \"organ\": \"Lymph node\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 28, \"short_mm\": 20}, {\"exam\": 1, \"long_mm\": 32, \"short_mm\": 23}]}], \"nontarget_unequivocal_progression\": true}",
+ "seconds": 1.9
+}

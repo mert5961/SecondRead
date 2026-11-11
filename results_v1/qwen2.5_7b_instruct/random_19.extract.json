@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Segment 4 liver lesion\", \"organ\": \"Liver\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 22, \"short_mm\": 10}, {\"exam\": 1, \"long_mm\": 26, \"short_mm\": 13}, {\"exam\": 2, \"long_mm\": 28, \"short_mm\": 13}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 2.7
+}

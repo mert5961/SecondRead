@@ -1,0 +1,4 @@
+{
+ "raw": "{\n\"response\": \"PD\",\n\"reason\": \"The sum of target lesion diameters increased from 12.6 cm at baseline to 15.5 cm at follow-up, representing a 23% increase and a 2.9 cm absolute increase, which meets the criteria for progression (>=20% and >=5mm is not met for absolute, wait: 15.5 - 12.6 = 2.9 cm. The rule requires >= 5 mm absolute increase AND >= 20% relative increase. 2.9 cm is >= 5 mm. 23% is >= 20%. Therefore, it is PD).\"\n}",
+ "seconds": 7.9
+}

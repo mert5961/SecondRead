@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Pancreatic tail mass\", \"organ\": \"Pancreas\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 22, \"short_mm\": 15}, {\"exam\": 1, \"long_mm\": 22, \"short_mm\": 12}]}], \"nontarget_unequivocal_progression\": true}",
+ "seconds": 2.1
+}

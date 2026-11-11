@@ -1,0 +1,4 @@
+{
+ "raw": "{\n\"response\": \"PR\",\n\"reason\": \"The sum of target lesion diameters decreased from 100 mm (60+40) at baseline to 71 mm (43+28) at follow-up, representing a 29% decrease, which is close to but slightly below the 30% threshold for PR, however, re-evaluating the strict definition: 29/100 = 29% decrease. Wait, 100 - 71 = 29. 29/100 = 29%. This is < 30%. Therefore, it is SD. Let me re-read the rules. PR: sum decreased >= 30% from baseline. 29% is not >= 30%. So it is SD. Let me double check the math. Baseline: 60 + 40 = 100. Follow-up: 43 + 28 = 71. Decrease = 29. Percentage decrease = 29/100 = 29%. 29% < 30%. So it is SD. Is there any other factor? No new lesions. No PD. So SD.\"\n}",
+ "seconds": 12.4
+}

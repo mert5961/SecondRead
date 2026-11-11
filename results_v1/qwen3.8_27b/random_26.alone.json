@@ -1,0 +1,4 @@
+{
+ "raw": "{\n\"response\": \"SD\",\n\"reason\": \"The sum of target lesion diameters decreased from 47 mm (19+28) at baseline to 33 mm (14+19) at follow-up, representing a 30% decrease which meets the threshold for PR, but since the prompt only provides two exams and asks for the response at the last exam compared to earlier, and 30% is the cutoff, let's re-verify: (47-33)/47 = 14/47 = 29.78%, which is < 30%, so it is SD.\"\n}",
+ "seconds": 7.2
+}

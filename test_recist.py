@@ -135,6 +135,18 @@ class Overall(unittest.TestCase):
         r = assess(ls, 1)
         self.assertEqual((r["target"], r["overall"]), (NA, NON_CR_NON_PD))
 
+    def test_normal_baseline_node_is_not_a_lesion(self):
+        # node short axis 8 mm at baseline is normal: not a target, not a non-target
+        ls = [L("liv", "liver", [(30, 20), (0, 0)]), L("node", "abdomen", [(19, 8), (19, 8)], nodal=True)]
+        r = assess(ls, 1)
+        self.assertEqual((r["nontargets"], r["nontarget"], r["overall"]), ([], NA, CR))
+
+    def test_normal_node_that_grows_is_flagged_for_review(self):
+        ls = [L("liv", "liver", [(30, 20), (30, 20)]), L("node", "abdomen", [(19, 8), (25, 12)], nodal=True)]
+        r = assess(ls, 1)
+        self.assertEqual(r["overall"], SD)
+        self.assertTrue(any(w.startswith("REVIEW") for w in r["why"]))
+
     def test_audit_trail_names_the_rule_and_numbers(self):
         ls = [L("liv", "liver", [(60, 50), (30, 20), (37, 30)])]
         why = " | ".join(assess(ls, 2)["why"])

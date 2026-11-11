@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Sclerotic bone lesions\", \"organ\": \"\", \"is_lymph_node\": false, \"measurable\": false, \"sizes\": [{\"exam\": 0, \"present\": true}, {\"exam\": 1, \"present\": true}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 1.4
+}

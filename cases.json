@@ -789,7 +789,7 @@
   ],
   "nontarget_pd": false,
   "exam": 1,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Segment 6 liver lesion measuring 30 x 22 mm.\n\nFOLLOW-UP 1:\n- Sclerotic bone lesions persist, not measurable.\n- The segment 6 liver lesion is no longer visible.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Segment 6 liver lesion measuring 30 x 22 mm.\n\nFOLLOW-UP 1:\n- Sclerotic bone lesions: still present, not measurable.\n- The segment 6 liver lesion is no longer visible.",
   "stated": "CR"
  },
  {
@@ -1521,7 +1521,7 @@
   ],
   "nontarget_pd": false,
   "exam": 3,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Segment 4 liver lesion measuring 44 x 31 mm.\n- Left adrenal mass measuring 19 x 15 mm.\n- Right hilar lymph node measuring 22 x 8 mm.\n- Subcarinal lymph node measuring 14 x 12 mm.\n\nFOLLOW-UP 1:\n- The left adrenal mass now measures 21 x 17 mm.\n- Subcarinal lymph node: 17 x 15 mm.\n- The right hilar lymph node now measures 27 x 10 mm.\n- Sclerotic bone lesions persist, not measurable.\n- Segment 4 liver lesion: 49 x 35 mm.\n\nFOLLOW-UP 2:\n- The segment 4 liver lesion now measures 54 x 38 mm.\n- Subcarinal lymph node: 21 x 18 mm.\n- The right hilar lymph node now measures 31 x 11 mm.\n- Sclerotic bone lesions persist, not measurable.\n- Left adrenal mass: 27 x 21 mm.\n\nFOLLOW-UP 3:\n- The subcarinal lymph node now measures 23 x 20 mm.\n- The left adrenal mass now measures 30 x 24 mm.\n- Sclerotic bone lesions persist, not measurable.\n- Right hilar lymph node: 35 x 13 mm.\n- Segment 4 liver lesion: 67 x 47 mm.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Segment 4 liver lesion measuring 44 x 31 mm.\n- Left adrenal mass measuring 19 x 15 mm.\n- Right hilar lymph node measuring 22 x 8 mm.\n- Subcarinal lymph node measuring 14 x 12 mm.\n\nFOLLOW-UP 1:\n- The left adrenal mass now measures 21 x 17 mm.\n- Subcarinal lymph node: 17 x 15 mm.\n- The right hilar lymph node now measures 27 x 10 mm.\n- Sclerotic bone lesions: still present, not measurable.\n- Segment 4 liver lesion: 49 x 35 mm.\n\nFOLLOW-UP 2:\n- The segment 4 liver lesion now measures 54 x 38 mm.\n- Subcarinal lymph node: 21 x 18 mm.\n- The right hilar lymph node now measures 31 x 11 mm.\n- Sclerotic bone lesions: still present, not measurable.\n- Left adrenal mass: 27 x 21 mm.\n\nFOLLOW-UP 3:\n- The subcarinal lymph node now measures 23 x 20 mm.\n- The left adrenal mass now measures 30 x 24 mm.\n- Sclerotic bone lesions: still present, not measurable.\n- Right hilar lymph node: 35 x 13 mm.\n- Segment 4 liver lesion: 67 x 47 mm.",
   "stated": "PD"
  },
  {
@@ -1677,7 +1677,7 @@
     ]
    }
   ],
-  "nontarget_pd": true,
+  "nontarget_pd": false,
   "exam": 3,
   "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left para-aortic lymph node measuring 3.1 x 2.1 cm.\n- Right upper lobe nodule measuring 2.5 x 2.3 cm.\n- Left axillary lymph node measuring 1.8 x 1.5 cm.\n\nFOLLOW-UP 1:\n- Left para-aortic lymph node: 2.1 x 1.4 cm.\n- Left axillary lymph node: 1.0 x 0.8 cm.\n- Right upper lobe nodule: 2.1 x 1.9 cm.\n\nFOLLOW-UP 2:\n- The left axillary lymph node now measures 0.9 x 0.8 cm.\n- The right upper lobe nodule now measures 1.2 x 1.1 cm.\n- Left para-aortic lymph node: 1.4 x 0.9 cm.\n\nFOLLOW-UP 3:\n- Right upper lobe nodule: 0.7 x 0.6 cm.\n- Left axillary lymph node: 0.6 x 0.5 cm.\n- Left para-aortic lymph node: 0.9 x 0.6 cm.",
   "stated": "PR"
@@ -1732,7 +1732,7 @@
   ],
   "nontarget_pd": false,
   "exam": 1,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Left lower lobe mass measuring 4.4 x 3.4 cm.\n- Segment 8 liver lesion measuring 2.2 x 1.7 cm.\n\nFOLLOW-UP 1:\n- Left lower lobe mass: 3.5 x 2.7 cm.\n- The segment 8 liver lesion now measures 1.9 x 1.5 cm.\n- Sclerotic bone lesions persist, not measurable.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Left lower lobe mass measuring 4.4 x 3.4 cm.\n- Segment 8 liver lesion measuring 2.2 x 1.7 cm.\n\nFOLLOW-UP 1:\n- Left lower lobe mass: 3.5 x 2.7 cm.\n- The segment 8 liver lesion now measures 1.9 x 1.5 cm.\n- Sclerotic bone lesions: still present, not measurable.",
   "stated": "CR"
  },
  {
@@ -1852,7 +1852,7 @@
   ],
   "nontarget_pd": false,
   "exam": 1,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 12 x 6 mm.\n- Splenic lesion measuring 47 x 37 mm.\n- Left para-aortic lymph node measuring 28 x 17 mm.\n- Portocaval lymph node measuring 21 x 19 mm.\n- Segment 4 liver lesion measuring 18 x 16 mm.\n- Small right pleural effusion, not measurable.\n- Right upper lobe nodule measuring 27 x 20 mm.\n\nFOLLOW-UP 1:\n- The left adrenal mass has resolved.\n- The portocaval lymph node now measures 11 x 10 mm.\n- Small right pleural effusion have resolved.\n- The splenic lesion has resolved.\n- The segment 4 liver lesion has resolved.\n- The right upper lobe nodule is no longer visible.\n- Left para-aortic lymph node: 11 x 7 mm.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 12 x 6 mm.\n- Splenic lesion measuring 47 x 37 mm.\n- Left para-aortic lymph node measuring 28 x 17 mm.\n- Portocaval lymph node measuring 21 x 19 mm.\n- Segment 4 liver lesion measuring 18 x 16 mm.\n- Small right pleural effusion, not measurable.\n- Right upper lobe nodule measuring 27 x 20 mm.\n\nFOLLOW-UP 1:\n- The left adrenal mass has resolved.\n- The portocaval lymph node now measures 11 x 10 mm.\n- Small right pleural effusion: resolved.\n- The splenic lesion has resolved.\n- The segment 4 liver lesion has resolved.\n- The right upper lobe nodule is no longer visible.\n- Left para-aortic lymph node: 11 x 7 mm.",
   "stated": "PR"
  },
  {
@@ -2205,7 +2205,7 @@
   ],
   "nontarget_pd": false,
   "exam": 2,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right hilar lymph node measuring 15 x 8 mm.\n- Subcarinal lymph node measuring 29 x 26 mm.\n- Segment 6 liver lesion measuring 15 x 11 mm.\n- Peritoneal thickening, not measurable.\n- Segment 8 liver lesion measuring 20 x 11 mm.\n- Pancreatic tail mass measuring 25 x 12 mm.\n- Splenic lesion measuring 45 x 37 mm.\n\nFOLLOW-UP 1:\n- The segment 8 liver lesion is unchanged.\n- The subcarinal lymph node is unchanged.\n- The pancreatic tail mass is unchanged.\n- The right hilar lymph node now measures 16 x 9 mm.\n- Peritoneal thickening persist, not measurable.\n- The segment 6 liver lesion now measures 15 x 11 mm.\n- The splenic lesion now measures 41 x 34 mm.\n\nFOLLOW-UP 2:\n- Subcarinal lymph node: 28 x 25 mm.\n- The pancreatic tail mass now measures 28 x 13 mm.\n- Segment 8 liver lesion: 19 x 10 mm.\n- Peritoneal thickening persist, not measurable.\n- The splenic lesion is unchanged.\n- The right hilar lymph node is unchanged.\n- The segment 6 liver lesion now measures 14 x 10 mm.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right hilar lymph node measuring 15 x 8 mm.\n- Subcarinal lymph node measuring 29 x 26 mm.\n- Segment 6 liver lesion measuring 15 x 11 mm.\n- Peritoneal thickening, not measurable.\n- Segment 8 liver lesion measuring 20 x 11 mm.\n- Pancreatic tail mass measuring 25 x 12 mm.\n- Splenic lesion measuring 45 x 37 mm.\n\nFOLLOW-UP 1:\n- The segment 8 liver lesion is unchanged.\n- The subcarinal lymph node is unchanged.\n- The pancreatic tail mass is unchanged.\n- The right hilar lymph node now measures 16 x 9 mm.\n- Peritoneal thickening: still present, not measurable.\n- The segment 6 liver lesion now measures 15 x 11 mm.\n- The splenic lesion now measures 41 x 34 mm.\n\nFOLLOW-UP 2:\n- Subcarinal lymph node: 28 x 25 mm.\n- The pancreatic tail mass now measures 28 x 13 mm.\n- Segment 8 liver lesion: 19 x 10 mm.\n- Peritoneal thickening: still present, not measurable.\n- The splenic lesion is unchanged.\n- The right hilar lymph node is unchanged.\n- The segment 6 liver lesion now measures 14 x 10 mm.",
   "stated": "SD"
  },
  {
@@ -2279,7 +2279,7 @@
   ],
   "nontarget_pd": false,
   "exam": 3,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Small right pleural effusion, not measurable.\n- Right hilar lymph node measuring 30 x 20 mm.\n- Portocaval lymph node measuring 32 x 20 mm.\n\nFOLLOW-UP 1:\n- Small right pleural effusion persist, not measurable.\n- The right hilar lymph node now measures 13 x 9 mm.\n- The portocaval lymph node now measures 16 x 10 mm.\n\nFOLLOW-UP 2:\n- Small right pleural effusion persist, not measurable.\n- Portocaval lymph node: 7 x 4 mm.\n- Right hilar lymph node: 8 x 5 mm.\n\nFOLLOW-UP 3:\n- The right hilar lymph node now measures 10 x 7 mm.\n- Portocaval lymph node: 9 x 6 mm.\n- Small right pleural effusion have resolved.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Small right pleural effusion, not measurable.\n- Right hilar lymph node measuring 30 x 20 mm.\n- Portocaval lymph node measuring 32 x 20 mm.\n\nFOLLOW-UP 1:\n- Small right pleural effusion: still present, not measurable.\n- The right hilar lymph node now measures 13 x 9 mm.\n- The portocaval lymph node now measures 16 x 10 mm.\n\nFOLLOW-UP 2:\n- Small right pleural effusion: still present, not measurable.\n- Portocaval lymph node: 7 x 4 mm.\n- Right hilar lymph node: 8 x 5 mm.\n\nFOLLOW-UP 3:\n- The right hilar lymph node now measures 10 x 7 mm.\n- Portocaval lymph node: 9 x 6 mm.\n- Small right pleural effusion: resolved.",
   "stated": "SD"
  },
  {
@@ -2854,7 +2854,7 @@
   ],
   "nontarget_pd": false,
   "exam": 2,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 4 liver lesion measuring 22 x 10 mm.\n- Right hilar lymph node measuring 22 x 13 mm.\n- Right renal mass measuring 50 x 37 mm.\n- Right upper lobe nodule measuring 30 x 24 mm.\n- Small right pleural effusion, not measurable.\n- Segment 8 liver lesion measuring 29 x 20 mm.\n- Left adrenal mass measuring 25 x 18 mm.\n\nFOLLOW-UP 1:\n- Right renal mass: 55 x 41 mm.\n- Left adrenal mass: 28 x 20 mm.\n- The segment 8 liver lesion now measures 33 x 23 mm.\n- Small right pleural effusion persist, not measurable.\n- The right upper lobe nodule now measures 34 x 27 mm.\n- Right hilar lymph node: 28 x 17 mm.\n- The segment 4 liver lesion now measures 26 x 12 mm.\n\nFOLLOW-UP 2:\n- The right upper lobe nodule now measures 39 x 31 mm.\n- Segment 4 liver lesion: 28 x 13 mm.\n- The segment 8 liver lesion now measures 46 x 32 mm.\n- New left lower lobe mass measuring 18 x 17 mm.\n- Small right pleural effusion persist, not measurable.\n- The right hilar lymph node now measures 30 x 18 mm.\n- Left adrenal mass: 30 x 22 mm.\n- Right renal mass: 72 x 53 mm.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 4 liver lesion measuring 22 x 10 mm.\n- Right hilar lymph node measuring 22 x 13 mm.\n- Right renal mass measuring 50 x 37 mm.\n- Right upper lobe nodule measuring 30 x 24 mm.\n- Small right pleural effusion, not measurable.\n- Segment 8 liver lesion measuring 29 x 20 mm.\n- Left adrenal mass measuring 25 x 18 mm.\n\nFOLLOW-UP 1:\n- Right renal mass: 55 x 41 mm.\n- Left adrenal mass: 28 x 20 mm.\n- The segment 8 liver lesion now measures 33 x 23 mm.\n- Small right pleural effusion: still present, not measurable.\n- The right upper lobe nodule now measures 34 x 27 mm.\n- Right hilar lymph node: 28 x 17 mm.\n- The segment 4 liver lesion now measures 26 x 12 mm.\n\nFOLLOW-UP 2:\n- The right upper lobe nodule now measures 39 x 31 mm.\n- Segment 4 liver lesion: 28 x 13 mm.\n- The segment 8 liver lesion now measures 46 x 32 mm.\n- New left lower lobe mass measuring 18 x 17 mm.\n- Small right pleural effusion: still present, not measurable.\n- The right hilar lymph node now measures 30 x 18 mm.\n- Left adrenal mass: 30 x 22 mm.\n- Right renal mass: 72 x 53 mm.",
   "stated": "PD"
  },
  {
@@ -3113,7 +3113,7 @@
     ]
    }
   ],
-  "nontarget_pd": true,
+  "nontarget_pd": false,
   "exam": 2,
   "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Pancreatic tail mass measuring 4.4 x 3.6 cm.\n- Left adrenal mass measuring 1.8 x 1.3 cm.\n- Left lower lobe mass measuring 3.8 x 2.9 cm.\n- Subcarinal lymph node measuring 4.1 x 2.7 cm.\n- Right upper lobe nodule measuring 4.0 x 2.6 cm.\n\nFOLLOW-UP 1:\n- Right upper lobe nodule: 2.0 x 1.3 cm.\n- Left lower lobe mass: 1.7 x 1.3 cm.\n- The left adrenal mass now measures 1.0 x 0.7 cm.\n- Pancreatic tail mass: 1.9 x 1.6 cm.\n- Subcarinal lymph node: 1.8 x 1.2 cm.\n\nFOLLOW-UP 2:\n- The pancreatic tail mass is no longer visible.\n- The right upper lobe nodule has resolved.\n- The left lower lobe mass is no longer visible.\n- The subcarinal lymph node now measures 1.2 x 0.8 cm.\n- The left adrenal mass has resolved.",
   "stated": "SD"
@@ -3331,13 +3331,13 @@
   ],
   "nontarget_pd": false,
   "exam": 1,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Pancreatic tail mass measuring 2.7 x 1.5 cm.\n- Right lower lobe nodule measuring 1.6 x 1.4 cm.\n- Splenic lesion measuring 3.9 x 2.8 cm.\n\nFOLLOW-UP 1:\n- New segment 6 liver lesion measuring 1.8 x 1.4 cm.\n- Pancreatic tail mass: 2.2 x 1.2 cm.\n- Sclerotic bone lesions persist, not measurable.\n- The splenic lesion now measures 3.0 x 2.2 cm.\n- Right lower lobe nodule: 1.4 x 1.2 cm.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Pancreatic tail mass measuring 2.7 x 1.5 cm.\n- Right lower lobe nodule measuring 1.6 x 1.4 cm.\n- Splenic lesion measuring 3.9 x 2.8 cm.\n\nFOLLOW-UP 1:\n- New segment 6 liver lesion measuring 1.8 x 1.4 cm.\n- Pancreatic tail mass: 2.2 x 1.2 cm.\n- Sclerotic bone lesions: still present, not measurable.\n- The splenic lesion now measures 3.0 x 2.2 cm.\n- Right lower lobe nodule: 1.4 x 1.2 cm.",
   "stated": "PR"
  },
  {
   "id": "random_26",
   "kind": "random",
-  "expected": "PD",
+  "expected": "SD",
   "lesions": [
    {
     "name": "portocaval lymph node",
@@ -3372,10 +3372,10 @@
     ]
    }
   ],
-  "nontarget_pd": true,
+  "nontarget_pd": false,
   "exam": 1,
   "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Portocaval lymph node measuring 19 x 8 mm.\n- Right hilar lymph node measuring 39 x 27 mm.\n\nFOLLOW-UP 1:\n- The portocaval lymph node now measures 14 x 6 mm.\n- Right hilar lymph node: 28 x 19 mm.",
-  "stated": "PD"
+  "stated": "SD"
  },
  {
   "id": "random_27",
@@ -4003,7 +4003,7 @@
     ]
    }
   ],
-  "nontarget_pd": true,
+  "nontarget_pd": false,
   "exam": 1,
   "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right renal mass measuring 33 x 24 mm.\n- Portocaval lymph node measuring 40 x 27 mm.\n- Splenic lesion measuring 45 x 36 mm.\n\nFOLLOW-UP 1:\n- Portocaval lymph node: 22 x 15 mm.\n- Right renal mass: 22 x 16 mm.\n- The splenic lesion now measures 39 x 31 mm.",
   "stated": "CR"
@@ -4090,7 +4090,7 @@
   ],
   "nontarget_pd": false,
   "exam": 1,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Splenic lesion measuring 45 x 37 mm.\n- Small right pleural effusion, not measurable.\n- Right renal mass measuring 40 x 33 mm.\n- Segment 4 liver lesion measuring 36 x 29 mm.\n- Right hilar lymph node measuring 14 x 12 mm.\n\nFOLLOW-UP 1:\n- Right hilar lymph node: 15 x 13 mm.\n- Small right pleural effusion persist, not measurable.\n- Splenic lesion: 61 x 50 mm.\n- The segment 4 liver lesion now measures 48 x 39 mm.\n- The right renal mass now measures 54 x 45 mm.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Splenic lesion measuring 45 x 37 mm.\n- Small right pleural effusion, not measurable.\n- Right renal mass measuring 40 x 33 mm.\n- Segment 4 liver lesion measuring 36 x 29 mm.\n- Right hilar lymph node measuring 14 x 12 mm.\n\nFOLLOW-UP 1:\n- Right hilar lymph node: 15 x 13 mm.\n- Small right pleural effusion: still present, not measurable.\n- Splenic lesion: 61 x 50 mm.\n- The segment 4 liver lesion now measures 48 x 39 mm.\n- The right renal mass now measures 54 x 45 mm.",
   "stated": "SD"
  },
  {
@@ -4556,7 +4556,7 @@
   ],
   "nontarget_pd": false,
   "exam": 2,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right renal mass measuring 36 x 25 mm.\n- Peritoneal thickening, not measurable.\n- Portocaval lymph node measuring 15 x 9 mm.\n\nFOLLOW-UP 1:\n- Portocaval lymph node: 12 x 7 mm.\n- Peritoneal thickening persist, not measurable.\n- Right renal mass: 27 x 19 mm.\n\nFOLLOW-UP 2:\n- The right renal mass now measures 16 x 11 mm.\n- Portocaval lymph node: 7 x 4 mm.\n- Peritoneal thickening persist, not measurable.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right renal mass measuring 36 x 25 mm.\n- Peritoneal thickening, not measurable.\n- Portocaval lymph node measuring 15 x 9 mm.\n\nFOLLOW-UP 1:\n- Portocaval lymph node: 12 x 7 mm.\n- Peritoneal thickening: still present, not measurable.\n- Right renal mass: 27 x 19 mm.\n\nFOLLOW-UP 2:\n- The right renal mass now measures 16 x 11 mm.\n- Portocaval lymph node: 7 x 4 mm.\n- Peritoneal thickening: still present, not measurable.",
   "stated": "PR"
  },
  {
@@ -4684,7 +4684,7 @@
   ],
   "nontarget_pd": false,
   "exam": 1,
-  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Small right pleural effusion, not measurable.\n- Segment 8 liver lesion measuring 21 x 9 mm.\n- Right upper lobe nodule measuring 44 x 34 mm.\n- Segment 6 liver lesion measuring 40 x 37 mm.\n- Subcarinal lymph node measuring 19 x 15 mm.\n\nFOLLOW-UP 1:\n- The segment 8 liver lesion is no longer visible.\n- Small right pleural effusion persist, not measurable.\n- The segment 6 liver lesion is no longer visible.\n- The right upper lobe nodule is no longer visible.\n- Subcarinal lymph node: 10 x 8 mm.",
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Small right pleural effusion, not measurable.\n- Segment 8 liver lesion measuring 21 x 9 mm.\n- Right upper lobe nodule measuring 44 x 34 mm.\n- Segment 6 liver lesion measuring 40 x 37 mm.\n- Subcarinal lymph node measuring 19 x 15 mm.\n\nFOLLOW-UP 1:\n- The segment 8 liver lesion is no longer visible.\n- Small right pleural effusion: still present, not measurable.\n- The segment 6 liver lesion is no longer visible.\n- The right upper lobe nodule is no longer visible.\n- Subcarinal lymph node: 10 x 8 mm.",
   "stated": "PR"
  },
  {

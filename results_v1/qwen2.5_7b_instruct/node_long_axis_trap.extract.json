@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Subcarinal lymph node\", \"organ\": \"Lymph node\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 30, \"short_mm\": 16}, {\"exam\": 1, \"long_mm\": 28, \"short_mm\": 9}]}, {\"name\": \"Left lower lobe mass\", \"organ\": \"Lung\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 20, \"short_mm\": 15}, {\"exam\": 1, \"long_mm\": 0, \"short_mm\": 0}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 3.3
+}

@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Splenic lesion\", \"organ\": \"Spleen\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 45, \"short_mm\": 37}, {\"exam\": 1, \"long_mm\": 61, \"short_mm\": 50}]}], \"nontarget_unequivocal_progression\": true}",
+ "seconds": 2.0
+}

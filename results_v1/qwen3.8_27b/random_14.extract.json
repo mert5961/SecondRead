@@ -1,0 +1,4 @@
+{
+ "raw": "{\n  \"lesions\": [\n    {\n      \"name\": \"Subcarinal lymph node\",\n      \"organ\": \"Lymph node\",\n      \"is_lymph_node\": true,\n      \"measurable\": true,\n      \"sizes\": [\n        {\n          \"exam\": 0,\n          \"long_mm\": 28,\n          \"short_mm\": 20\n        },\n        {\n          \"exam\": 1,\n          \"long_mm\": 32,\n          \"short_mm\": 23\n        }\n      ]\n    },\n    {\n      \"name\": \"Left axillary lymph node\",\n      \"organ\": \"Lymph node\",\n      \"is_lymph_node\": true,\n      \"measurable\": true,\n      \"sizes\": [\n        {\n          \"exam\": 0,\n          \"long_mm\": 29,\n          \"short_mm\": 23\n        },\n        {\n          \"exam\": 1,\n          \"long_mm\": 37,\n          \"short_mm\": 29\n        }\n      ]\n    }\n  ],\n  \"nontarget_unequivocal_progression\": false\n}",
+ "seconds": 10.2
+}

@@ -1,7 +1,16 @@
 # Build log
 
 Coding agent: Claude Fable 5.2 in Claude Code. Reviewer: Mert.
-One entry per time the agent's output was wrong, weak or unclear.
+One entry per time the agent's output was wrong, weak or unclear. "Caught by" says honestly who or what found it:
+a test, the eval, the agent re-reading its own work, or Mert.
 
-| # | Date | What the agent did | How I caught it | Fix |
+| # | Date | What went wrong | Caught by | Fix |
 |---|---|---|---|---|
+| 1 | 2026-11-12 | First plan (by the previous model, Opus 5.5) compared a 7B model alone against code: an easy win that a researcher would read as a strawman. It also treated the report text as the product, while Nucleo's product reads images. | Fable's review of the plan, agreed by Mert | Reframed as the decision layer after a measurement model; added the strongest local model as a second baseline; the "LLM alone" prompt now gets the full RECIST rules. |
+| 2 | 2026-11-12 | `make_cases.py`: picked "non-nodal sites" with `s[1]` (the organ string, always true) instead of `s[2]` (the nodal flag). The list was always empty, so the generator crashed on the first new-lesion case. | Test run (`IndexError`) | `s[2]`. Lesson: positional tuples for (name, organ, nodal) invite this; a named field would not. |
+| 3 | 2026-11-12 | Report text said "The Segment 6 liver lesion": a capitalisation coin-flip was applied to the wrong sentence pattern. | Agent reading sample reports before running the eval | Capitalise only at the start of a line. |
+| 4 | 2026-11-12 | First eval run: the small model returned **one lesion** for 55 of 60 reports. My extraction prompt showed a JSON example with a single lesion, and the 7B model copied the shape. Its bad score (55%) was partly my prompt, not only the model. | The eval, then the agent reading the raw outputs instead of trusting the score | Example now has two lesions plus "one object per lesion, do not skip any". Run 1 kept in `results_v1/` for comparison. |
+| 5 | 2026-11-12 | The only case the big model "failed" (random_26) had a **wrong gold label**: the generator set "non-target progression" on a patient with no non-target lesion, so the report never said it. The extraction was perfect and the code was right. | The eval: a clean extraction that still disagreed with gold | Generator only sets the flag when the report can state it. Lesson: a failure with zero extraction errors means check the label first. |
+| 6 | 2026-11-12 | Same case showed a rule gap: a lymph node of 8 mm short axis at baseline was listed as a "non-target lesion". Under RECIST 1.1 a node < 10 mm is normal, not disease. It did not change any answer, but the audit trail was wrong. | Agent reading the audit trail of case random_26 | `is_normal_node`: such nodes are neither target nor non-target; if one later reaches 10 mm the trail says REVIEW (not counted, needs a reader). Two new tests. |
+| 7 | 2026-11-12 | The error counter punished the big model for calling a lesion "New right lower lobe nodule" (the report's own words): counted as one missed + one extra lesion. | Agent reading the two flagged cases | Matcher strips a leading "the" / "new". |
+| 8 | 2026-11-12 | Raw-output cache was keyed by case id only, so a changed prompt would silently reuse old answers. | Agent, before the rerun | Cache key includes a hash of the prompt. |

@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Left adrenal mass\", \"organ\": \"Adrenal\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 40, \"short_mm\": 30}, {\"exam\": 1, \"long_mm\": 27, \"short_mm\": 25}, {\"exam\": 2, \"long_mm\": 17, \"short_mm\": 16}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 2.4
+}

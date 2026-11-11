@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Right renal mass\", \"organ\": \"Kidney\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 36, \"short_mm\": 25}, {\"exam\": 1, \"long_mm\": 27, \"short_mm\": 19}, {\"exam\": 2, \"long_mm\": 16, \"short_mm\": 11}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 2.3
+}

@@ -122,7 +122,10 @@ def random_case(rng):
         free = [s[0] for s in SITES if s[0] not in names and not s[2]]
         sh = rng.randint(6, 20)
         lesions.append(les(rng.choice(free), [None] * (n_exams - 1) + [(sh + rng.randint(1, 6), sh)]))
-    return lesions, (rng.random() < 0.05)
+    npd = rng.random() < 0.05
+    # the report can only state non-target progression about a non-measurable lesion that is still there
+    can_say = any(not l["measurable"] and l["sizes"][-1] == PRESENT for l in lesions)
+    return lesions, (npd and can_say)
 
 
 def to_lesions(case_lesions):
@@ -160,9 +163,9 @@ def render(lesions, nontarget_pd, rng):
                     line = "%s, not measurable." % name.capitalize()
                 elif s == PRESENT:
                     line = ("Marked, unequivocal increase in %s." % name) if (nontarget_pd and t == n - 1) \
-                        else "%s persist, not measurable." % name.capitalize()
+                        else "%s: still present, not measurable." % name.capitalize()
                 else:
-                    line = "%s have resolved." % name.capitalize()
+                    line = "%s: resolved." % name.capitalize()
             elif prev is None and t > 0:
                 line = "New %s measuring %s." % (name, fmt(s, cm))
             elif tuple(s) == (0, 0):

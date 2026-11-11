@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Left lower lobe mass\", \"organ\": \"Lung\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 40, \"short_mm\": 30}, {\"exam\": 1, \"long_mm\": 20, \"short_mm\": 15}, {\"exam\": 2, \"long_mm\": 25, \"short_mm\": 18}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 2.3
+}

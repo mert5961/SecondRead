@@ -61,6 +61,12 @@ def is_target_candidate(l: Lesion) -> bool:
     return d >= (MIN_NODE_TARGET_MM if l.nodal else MIN_NON_NODAL_MM)
 
 
+def is_normal_node(l: Lesion) -> bool:
+    """A measured lymph node with short axis < 10 mm at baseline is normal: neither target nor non-target."""
+    d = l.diameter(0)
+    return l.nodal and l.measurable and d is not None and d < NODE_NORMAL_BELOW_MM
+
+
 def select_targets(lesions: List[Lesion]) -> Tuple[List[Lesion], List[str]]:
     """Up to 5 targets, up to 2 per organ, largest first (ties broken by lesion id)."""
     why = []
@@ -80,6 +86,9 @@ def select_targets(lesions: List[Lesion]) -> Tuple[List[Lesion], List[str]]:
         if l.at_baseline() and l not in cands:
             if not l.measurable:
                 why.append("%s: non-target, not measurable" % l.lid)
+            elif l.nodal and is_normal_node(l):
+                why.append("%s: normal node at baseline (short axis %s mm < %d), not followed as disease"
+                           % (l.lid, l.diameter(0), NODE_NORMAL_BELOW_MM))
             elif l.nodal:
                 why.append("%s: non-target, node short axis %s mm < %d" % (l.lid, l.diameter(0), MIN_NODE_TARGET_MM))
             else:
@@ -158,11 +167,15 @@ def new_lesions(lesions: List[Lesion], t: int) -> List[str]:
 def assess(lesions: List[Lesion], t: int, nontarget_progression: bool = False) -> Dict:
     """Overall response at exam t (RECIST 1.1 Table 1; Table 2 when there are no targets)."""
     targets, why = select_targets(lesions)
-    nontargets = [l for l in lesions if l.at_baseline() and l not in targets]
+    nontargets = [l for l in lesions if l.at_baseline() and l not in targets and not is_normal_node(l)]
     t_resp, t_why, nums = target_response(targets, t)
     n_resp, n_why = nontarget_response(nontargets, t, nontarget_progression)
     new = new_lesions(lesions, t)
     why = why + t_why + n_why
+    for l in lesions:
+        if is_normal_node(l) and (l.diameter(t) or 0) >= NODE_NORMAL_BELOW_MM:
+            why.append("REVIEW: %s was normal at baseline and is now %d mm short axis; not counted, needs a reader"
+                       % (l.lid, l.diameter(t)))
     if new:
         overall = PD
         why.append("overall PD: new lesion(s): " + ", ".join(new))

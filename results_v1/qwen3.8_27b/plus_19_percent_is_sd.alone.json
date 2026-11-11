@@ -1,0 +1,4 @@
+{
+ "raw": "{\n\"response\": \"PD\",\n\"reason\": \"The sum of target lesion diameters increased from 100 mm (40+60) at baseline to 119 mm (49+70) at follow-up, representing a 19% increase which is less than the required 20% threshold for PD, but wait, let me re-calculate: 119 is not >= 20% of 100 (which is 120). So it is not PD by sum. Is it PR? No, it increased. Is it CR? No. So it is SD. Wait, let me double check the math. Baseline sum: 40 (lung) + 60 (liver) = 100. Follow-up sum: 49 (lung) + 70 (liver) = 119. Increase is 19 mm. 19/100 = 19%. This is < 20%. Therefore, it does not meet PD criteria. It does not meet PR criteria. It is not CR. Thus, it is SD.\"\n}",
+ "seconds": 11.7
+}

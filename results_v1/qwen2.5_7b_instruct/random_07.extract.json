@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Left para-aortic lymph node\", \"organ\": \"Para-aortic\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 31, \"short_mm\": 21}, {\"exam\": 1, \"long_mm\": 21, \"short_mm\": 14}, {\"exam\": 2, \"long_mm\": 14, \"short_mm\": 9}, {\"exam\": 3, \"long_mm\": 9, \"short_mm\": 6}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 2.9
+}

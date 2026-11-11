@@ -1,0 +1,4 @@
+{
+ "raw": "{\"response\": \"PR\", \"reason\": \"Baseline sum of target lesions is 30 mm, and at follow-up 1, the liver lesion is gone, so the sum is 0 mm, which is a >=30% decrease from baseline.\"}",
+ "seconds": 1.1
+}

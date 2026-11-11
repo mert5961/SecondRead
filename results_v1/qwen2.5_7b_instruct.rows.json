@@ -1,0 +1,1162 @@
+[
+ {
+  "id": "node_12mm_is_non_target",
+  "kind": "edge",
+  "gold": "SD",
+  "stated": "PD",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Segment 6 liver lesion: target, longest diameter 40 mm",
+   "SD: sum 30 mm; vs baseline 40 mm (-25.0%), vs nadir 40 mm (-25.0%, -10 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "node_15mm_is_target",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "SD",
+  "why": [
+   "Right upper lobe nodule: target, longest diameter 20 mm",
+   "SD: sum 16 mm; vs baseline 20 mm (-20.0%), vs nadir 20 mm (-20.0%, -4 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "three_liver_lesions_two_targets",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 30 mm",
+   "SD: sum 22 mm; vs baseline 30 mm (-26.7%), vs nadir 30 mm (-26.7%, -8 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "seven_lesions_five_targets",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "CR",
+  "why": [
+   "Left adrenal mass: target, longest diameter 40 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 0 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "plus_19_percent_is_sd",
+  "kind": "edge",
+  "gold": "SD",
+  "stated": "CR",
+  "alone": "PD",
+  "extract": "PD",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 40 mm",
+   "PD: sum 49 mm vs nadir 40 mm = +9 mm (+22.5%), needs >= +20% and >= +5 mm",
+   "no non-target lesions",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "plus_20_percent_is_pd",
+  "kind": "edge",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Segment 6 liver lesion: target, longest diameter 60 mm",
+   "SD: sum 71 mm; vs baseline 60 mm (+18.3%), vs nadir 60 mm (+18.3%, +11 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "plus_20_percent_but_4mm_is_sd",
+  "kind": "edge",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 10 mm",
+   "SD: sum 12 mm; vs baseline 10 mm (+20.0%), vs nadir 10 mm (+20.0%, +2 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "plus_25_percent_and_5mm_is_pd",
+  "kind": "edge",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 10 mm",
+   "SD: sum 12 mm; vs baseline 10 mm (+20.0%), vs nadir 10 mm (+20.0%, +2 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "pd_from_nadir_not_baseline",
+  "kind": "edge",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "SD",
+  "extract": "PD",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 40 mm",
+   "PD: sum 25 mm vs nadir 20 mm = +5 mm (+25.0%), needs >= +20% and >= +5 mm",
+   "no non-target lesions",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "pr_held_after_small_regrowth",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "PD",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 40 mm",
+   "PD: sum 25 mm vs nadir 20 mm = +5 mm (+25.0%), needs >= +20% and >= +5 mm",
+   "no non-target lesions",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "new_lesion_with_shrinking_targets",
+  "kind": "edge",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "PR",
+  "why": [
+   "Segment 6 liver lesion: target, longest diameter 60 mm",
+   "PR: sum 36 mm vs baseline 60 mm (-40.0%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "new_node_under_10mm_is_not_new_lesion",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "PR",
+  "why": [
+   "Segment 6 liver lesion: target, longest diameter 60 mm",
+   "Left lower lobe mass: target, longest diameter 40 mm",
+   "PR: sum 60 mm vs baseline 100 mm (-40.0%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "cr_with_residual_8mm_node",
+  "kind": "edge",
+  "gold": "CR",
+  "stated": "CR",
+  "alone": "PR",
+  "extract": "CR",
+  "why": [
+   "Right hilar lymph node: target, short axis 18 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 8 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "node_10mm_blocks_cr",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "PR",
+  "why": [
+   "Right hilar lymph node: target, short axis 18 mm",
+   "PR: sum 10 mm vs baseline 18 mm (-44.4%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "target_cr_non_target_persists",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "CR",
+  "alone": "PR",
+  "extract": "NON_CR_NON_PD",
+  "why": [
+   "Sclerotic bone lesions: non-target, not measurable",
+   "no target lesions",
+   "non-target non-CR/non-PD: still present: Sclerotic bone lesions",
+   "overall NON_CR_NON_PD: non-target disease only"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "non_target_unequivocal_progression",
+  "kind": "edge",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Segment 6 liver lesion: target, longest diameter 30 mm",
+   "SD: sum 30 mm; vs baseline 30 mm (+0.0%), vs nadir 30 mm (+0.0%, +0 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "node_long_axis_trap",
+  "kind": "edge",
+  "gold": "CR",
+  "stated": "CR",
+  "alone": "PR",
+  "extract": "CR",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 20 mm",
+   "Subcarinal lymph node: target, short axis 16 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 9 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": []
+ },
+ {
+  "id": "three_nodes_two_targets",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "PR",
+  "why": [
+   "Left para-aortic lymph node: target, short axis 20 mm",
+   "PR: sum 12 mm vs baseline 20 mm (-40.0%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "sub_centimetre_lesion_is_non_target",
+  "kind": "edge",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "NON_CR_NON_PD",
+  "why": [
+   "Right upper lobe nodule: non-target, longest diameter 8 mm < 10",
+   "no target lesions",
+   "non-target non-CR/non-PD: still present: Right upper lobe nodule",
+   "overall NON_CR_NON_PD: non-target disease only"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "minus_29_percent_is_sd",
+  "kind": "edge",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Segment 6 liver lesion: target, longest diameter 60 mm",
+   "SD: sum 43 mm; vs baseline 60 mm (-28.3%), vs nadir 60 mm (-28.3%, -17 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_01",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "SD",
+  "extract": "PR",
+  "why": [
+   "Left adrenal mass: target, longest diameter 40 mm",
+   "PR: sum 17 mm vs baseline 40 mm (-57.5%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_02",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PD",
+  "alone": "SD",
+  "extract": "PR",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 37 mm",
+   "PR: sum 15 mm vs baseline 37 mm (-59.5%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_03",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 22 mm",
+   "SD: sum 16 mm; vs baseline 22 mm (-27.3%), vs nadir 22 mm (-27.3%, -6 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_04",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "PR",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 38 mm",
+   "Splenic lesion: target, longest diameter 28 mm",
+   "Left adrenal mass: target, longest diameter 20 mm",
+   "Portocaval lymph node: target, short axis 19 mm",
+   "PR: sum 27 mm vs baseline 105 mm (-74.3%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "wrong_size",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_05",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "PD",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 440 mm",
+   "Left adrenal mass: target, longest diameter 400 mm",
+   "Subcarinal lymph node: target, short axis 120 mm",
+   "Right hilar lymph node: target, short axis 80 mm",
+   "PD: sum 1300 mm vs nadir 950 mm = +350 mm (+36.8%), needs >= +20% and >= +5 mm",
+   "no non-target lesions",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "cm_mm_unit",
+   "cm_mm_unit",
+   "cm_mm_unit",
+   "wrong_size",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_06",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "SD",
+  "why": [
+   "Splenic lesion: target, longest diameter 34 mm",
+   "SD: sum 26 mm; vs baseline 34 mm (-23.5%), vs nadir 34 mm (-23.5%, -8 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_07",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "CR",
+  "why": [
+   "Left para-aortic lymph node: target, short axis 21 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 6 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_08",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "CR",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 44 mm",
+   "SD: sum 35 mm; vs baseline 44 mm (-20.5%), vs nadir 44 mm (-20.5%, -9 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_09",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "CR",
+  "extract": "CR",
+  "why": [
+   "Left adrenal mass: target, longest diameter 40 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 0 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_10",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Right upper lobe nodule: target, longest diameter 41 mm",
+   "SD: sum 31 mm; vs baseline 41 mm (-24.4%), vs nadir 41 mm (-24.4%, -10 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_11",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "CR",
+  "why": [
+   "left para-aortic lymph node: non-target, node short axis 8 mm < 15",
+   "no target lesions",
+   "non-target CR: all non-target lesions gone, nodes < 10 mm",
+   "overall CR: non-target disease only"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_12",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "SD",
+  "extract": "CR",
+  "why": [
+   "Right hilar lymph node: non-target, node short axis 8 mm < 15",
+   "no target lesions",
+   "non-target CR: all non-target lesions gone, nodes < 10 mm",
+   "overall CR: non-target disease only"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_13",
+  "kind": "random",
+  "gold": "CR",
+  "stated": "SD",
+  "alone": "SD",
+  "extract": "CR",
+  "why": [
+   "right hilar lymph node: target, short axis 20 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 7 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_14",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PR",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Subcarinal lymph node: target, short axis 20 mm",
+   "SD: sum 23 mm; vs baseline 20 mm (+15.0%), vs nadir 20 mm (+15.0%, +3 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_15",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PR",
+  "alone": "PD",
+  "extract": "PD",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 80 mm",
+   "Splenic lesion: target, longest diameter 70 mm",
+   "Left adrenal mass: target, longest diameter 40 mm",
+   "Left para-aortic lymph node: target, short axis 23 mm",
+   "Portocaval lymph node: target, short axis 22 mm",
+   "PR: sum 147 mm vs baseline 235 mm (-37.4%), needs <= -30%",
+   "no non-target lesions",
+   "overall PD: new lesion(s): Right lower lobe nodule"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "wrong_size",
+   "wrong_size",
+   "wrong_size",
+   "wrong_size",
+   "wrong_size"
+  ]
+ },
+ {
+  "id": "random_16",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "PR",
+  "why": [
+   "Left lower lobe mass: target, longest diameter 41 mm",
+   "PR: sum 26 mm vs baseline 41 mm (-36.6%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_17",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "NE",
+  "why": [
+   "Right upper lobe nodule: target, longest diameter 40 mm",
+   "a target lesion has no measurement at baseline or at this exam",
+   "no non-target lesions",
+   "overall NE: targets not all evaluated"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_18",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "PD",
+  "extract": "PR",
+  "why": [
+   "Portocaval lymph node: target, short axis 30 mm",
+   "PR: sum 18 mm vs baseline 30 mm (-40.0%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_19",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "PD",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 22 mm",
+   "PD: sum 28 mm vs nadir 22 mm = +6 mm (+27.3%), needs >= +20% and >= +5 mm",
+   "no non-target lesions",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_20",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "PR",
+  "why": [
+   "Pancreatic tail mass: target, longest diameter 40 mm",
+   "Left lower lobe mass: target, longest diameter 30 mm",
+   "Segment 4 liver lesion: target, longest diameter 30 mm",
+   "Segment 8 liver lesion: target, longest diameter 30 mm",
+   "PR: sum 71 mm vs baseline 130 mm (-45.4%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "wrong_size",
+   "wrong_size",
+   "wrong_size"
+  ]
+ },
+ {
+  "id": "random_21",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PD",
+  "extract": "PR",
+  "why": [
+   "Left adrenal mass: target, longest diameter 37 mm",
+   "PR: sum 22 mm vs baseline 37 mm (-40.5%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_22",
+  "kind": "random",
+  "gold": "CR",
+  "stated": "SD",
+  "alone": "CR",
+  "extract": "CR",
+  "why": [
+   "Pancreatic tail mass: target, longest diameter 40 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 0 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_23",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Left axillary lymph node: target, short axis 19 mm",
+   "SD: sum 20 mm; vs baseline 19 mm (+5.3%), vs nadir 19 mm (+5.3%, +1 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_24",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Right upper lobe nodule: target, longest diameter 41 mm",
+   "SD: sum 44 mm; vs baseline 41 mm (+7.3%), vs nadir 41 mm (+7.3%, +3 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_25",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PR",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Pancreatic tail mass: target, longest diameter 22 mm",
+   "SD: sum 22 mm; vs baseline 22 mm (+0.0%), vs nadir 22 mm (+0.0%, +0 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_26",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PR",
+  "extract": "PR",
+  "why": [
+   "Portocaval lymph node: target, short axis 30 mm",
+   "PR: sum 12 mm vs baseline 30 mm (-60.0%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_27",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "PR",
+  "extract": "CR",
+  "why": [
+   "Left adrenal mass: target, longest diameter 280 mm",
+   "Left axillary lymph node: target, short axis 280 mm",
+   "Subcarinal lymph node: target, short axis 120 mm",
+   "Segment 4 liver lesion: target, longest diameter 40 mm",
+   "Segment 6 liver lesion: target, longest diameter 40 mm",
+   "Splenic lesion: non-target, already 5 targets",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 0 mm)",
+   "non-target CR: all non-target lesions gone, nodes < 10 mm",
+   "overall CR: target CR, non-target CR"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "cm_mm_unit",
+   "cm_mm_unit",
+   "cm_mm_unit",
+   "wrong_size",
+   "wrong_size"
+  ]
+ },
+ {
+  "id": "random_28",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "PR",
+  "extract": "SD",
+  "why": [
+   "subcarinal lymph node: target, short axis 26 mm",
+   "SD: sum 23 mm; vs baseline 26 mm (-11.5%), vs nadir 26 mm (-11.5%, -3 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_29",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "CR",
+  "alone": "SD",
+  "extract": "PR",
+  "why": [
+   "Right renal mass: target, longest diameter 51 mm",
+   "Splenic lesion: target, longest diameter 51 mm",
+   "Segment 8 liver lesion: target, longest diameter 47 mm",
+   "Right upper lobe nodule: target, longest diameter 32 mm",
+   "Left para-aortic lymph node: target, short axis 21 mm",
+   "Left adrenal mass: non-target, already 5 targets",
+   "PR: sum 92 mm vs baseline 202 mm (-54.5%), needs <= -30%",
+   "non-target non-CR/non-PD: still present: Left adrenal mass",
+   "overall PR: target PR, non-target NON_CR_NON_PD, no new lesions"
+  ],
+  "extraction_errors": []
+ },
+ {
+  "id": "random_30",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "PD",
+  "why": [
+   "Right lower lobe nodule: target, longest diameter 45 mm",
+   "Right renal mass: target, longest diameter 40 mm",
+   "Segment 6 liver lesion: target, longest diameter 40 mm",
+   "Left para-aortic lymph node: target, short axis 26 mm",
+   "Right hilar lymph node: target, short axis 15 mm",
+   "Subcarinal lymph node: non-target, node short axis 14 mm < 15",
+   "PD: sum 234 mm vs nadir 166 mm = +68 mm (+41.0%), needs >= +20% and >= +5 mm",
+   "non-target PD: unequivocal progression reported",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "wrong_size"
+  ]
+ },
+ {
+  "id": "random_31",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "CR",
+  "alone": "SD",
+  "extract": "PR",
+  "why": [
+   "Right renal mass: target, longest diameter 33 mm",
+   "PR: sum 22 mm vs baseline 33 mm (-33.3%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_32",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "SD",
+  "alone": "PD",
+  "extract": "PD",
+  "why": [
+   "Splenic lesion: target, longest diameter 45 mm",
+   "PD: sum 61 mm vs nadir 45 mm = +16 mm (+35.6%), needs >= +20% and >= +5 mm",
+   "no non-target lesions",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_33",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "CR",
+  "alone": "SD",
+  "extract": "PR",
+  "why": [
+   "Segment 8 liver lesion: target, longest diameter 44 mm",
+   "PR: sum 19 mm vs baseline 44 mm (-56.8%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_34",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "PD",
+  "alone": "PD",
+  "extract": "PD",
+  "why": [
+   "Segment 4 liver lesion: target, longest diameter 43 mm",
+   "Segment 6 liver lesion: target, longest diameter 38 mm",
+   "Splenic lesion: target, longest diameter 24 mm",
+   "Left adrenal mass: target, longest diameter 23 mm",
+   "Left axillary lymph node: target, short axis 16 mm",
+   "PD: sum 161 mm vs nadir 100 mm = +61 mm (+61.0%), needs >= +20% and >= +5 mm",
+   "no non-target lesions",
+   "overall PD: progression of target lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_35",
+  "kind": "random",
+  "gold": "CR",
+  "stated": "SD",
+  "alone": "PR",
+  "extract": "CR",
+  "why": [
+   "Right hilar lymph node: target, short axis 30 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 6 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "wrong_size",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_36",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "SD",
+  "extract": "PR",
+  "why": [
+   "Right upper lobe nodule: target, longest diameter 46 mm",
+   "PR: sum 28 mm vs baseline 46 mm (-39.1%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_37",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "SD",
+  "extract": "PR",
+  "why": [
+   "Right renal mass: target, longest diameter 36 mm",
+   "PR: sum 16 mm vs baseline 36 mm (-55.6%), needs <= -30%",
+   "no non-target lesions",
+   "overall PR: target PR, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_38",
+  "kind": "random",
+  "gold": "SD",
+  "stated": "SD",
+  "alone": "SD",
+  "extract": "SD",
+  "why": [
+   "Segment 8 liver lesion: target, longest diameter 21 mm",
+   "SD: sum 18 mm; vs baseline 21 mm (-14.3%), vs nadir 21 mm (-14.3%, -3 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_39",
+  "kind": "random",
+  "gold": "PR",
+  "stated": "PR",
+  "alone": "CR",
+  "extract": "CR",
+  "why": [
+   "Segment 8 liver lesion: target, longest diameter 21 mm",
+   "CR: all non-nodal targets gone and all nodal targets < 10 mm short axis (sum 0 mm)",
+   "no non-target lesions",
+   "overall CR: target CR, non-target NA"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ },
+ {
+  "id": "random_40",
+  "kind": "random",
+  "gold": "PD",
+  "stated": "SD",
+  "alone": "PD",
+  "extract": "SD",
+  "why": [
+   "Right upper lobe nodule: target, longest diameter 20 mm",
+   "SD: sum 24 mm; vs baseline 20 mm (+20.0%), vs nadir 20 mm (+20.0%, +4 mm)",
+   "no non-target lesions",
+   "overall SD: target SD, non-target NA, no new lesions"
+  ],
+  "extraction_errors": [
+   "missed_or_renamed_lesion",
+   "missed_or_renamed_lesion"
+  ]
+ }
+]

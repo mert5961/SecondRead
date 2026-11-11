@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [{\"name\": \"Right hilar lymph node\", \"organ\": \"Lymph node\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 15, \"short_mm\": 8}, {\"exam\": 1, \"long_mm\": 16, \"short_mm\": 9}, {\"exam\": 2, \"long_mm\": 0, \"short_mm\": 0}]}], \"nontarget_unequivocal_progression\": false}",
+ "seconds": 2.5
+}

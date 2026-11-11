@@ -1,0 +1,128 @@
+{
+ "oracle": "60/60 (100%)",
+ "models": [
+  {
+   "model": "qwen2.5:7b-instruct",
+   "alone": {
+    "all": "37/60 (62%)",
+    "edge": "13/20 (65%)",
+    "random": "24/40 (60%)",
+    "failed_edge_cases": [
+     "three_liver_lesions_two_targets",
+     "plus_19_percent_is_sd",
+     "plus_20_percent_but_4mm_is_sd",
+     "plus_25_percent_and_5mm_is_pd",
+     "pd_from_nadir_not_baseline",
+     "cr_with_residual_8mm_node",
+     "node_long_axis_trap"
+    ],
+    "confusion": {
+     "PR->SD": 7,
+     "SD->PD": 5,
+     "PD->SD": 2,
+     "CR->PR": 3,
+     "PR->CR": 2,
+     "CR->SD": 1,
+     "PR->PD": 1,
+     "PD->PR": 1,
+     "SD->PR": 1
+    }
+   },
+   "extract": {
+    "all": "33/60 (55%)",
+    "edge": "9/20 (45%)",
+    "random": "24/40 (60%)",
+    "failed_edge_cases": [
+     "node_15mm_is_target",
+     "three_liver_lesions_two_targets",
+     "seven_lesions_five_targets",
+     "plus_19_percent_is_sd",
+     "plus_20_percent_is_pd",
+     "plus_25_percent_and_5mm_is_pd",
+     "pr_held_after_small_regrowth",
+     "new_lesion_with_shrinking_targets",
+     "target_cr_non_target_persists",
+     "non_target_unequivocal_progression",
+     "sub_centimetre_lesion_is_non_target"
+    ],
+    "confusion": {
+     "PR->SD": 3,
+     "PR->CR": 5,
+     "SD->PD": 1,
+     "PD->SD": 7,
+     "PR->PD": 1,
+     "PD->PR": 3,
+     "PR->NON_CR_NON_PD": 2,
+     "PD->CR": 1,
+     "SD->CR": 1,
+     "SD->NE": 1,
+     "SD->PR": 2
+    }
+   },
+   "extraction_errors": {
+    "missed_or_renamed_lesion": 132,
+    "wrong_size": 30,
+    "cm_mm_unit": 6
+   },
+   "clean_extractions": "2/60 (3%)",
+   "second_read": {
+    "wrong_impressions": 17,
+    "flagged": 36,
+    "recall": "16/17 (94%)",
+    "precision": "16/36 (44%)"
+   }
+  },
+  {
+   "model": "qwen3.8:27b",
+   "alone": {
+    "all": "42/60 (70%)",
+    "edge": "8/20 (40%)",
+    "random": "34/40 (85%)",
+    "failed_edge_cases": [
+     "node_15mm_is_target",
+     "three_liver_lesions_two_targets",
+     "plus_19_percent_is_sd",
+     "plus_25_percent_and_5mm_is_pd",
+     "pd_from_nadir_not_baseline",
+     "pr_held_after_small_regrowth",
+     "cr_with_residual_8mm_node",
+     "target_cr_non_target_persists",
+     "node_long_axis_trap",
+     "three_nodes_two_targets",
+     "sub_centimetre_lesion_is_non_target",
+     "minus_29_percent_is_sd"
+    ],
+    "confusion": {
+     "PR->SD": 6,
+     "SD->PD": 2,
+     "PD->SD": 3,
+     "CR->PR": 2,
+     "PR->CR": 2,
+     "SD->PR": 1,
+     "CR->SD": 1,
+     "PR->PD": 1
+    }
+   },
+   "extract": {
+    "all": "59/60 (98%)",
+    "edge": "20/20 (100%)",
+    "random": "39/40 (98%)",
+    "failed_edge_cases": [],
+    "confusion": {
+     "PD->SD": 1
+    }
+   },
+   "extraction_errors": {
+    "missed_or_renamed_lesion": 2,
+    "extra_lesion": 2
+   },
+   "clean_extractions": "58/60 (97%)",
+   "second_read": {
+    "wrong_impressions": 17,
+    "flagged": 18,
+    "recall": "17/17 (100%)",
+    "precision": "17/18 (94%)"
+   }
+  }
+ ]
+}
