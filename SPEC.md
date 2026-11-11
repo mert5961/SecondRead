@@ -58,3 +58,14 @@ What and why (one paragraph naming Nucleo's use case), a `flowchart TD` Mermaid 
 ## Done when
 - `python -m unittest` passes, `python run_eval.py` prints the table, README + BUILD_LOG are filled in.
 - Mert reviews; the repo goes public only on his yes (playbook privacy scan first).
+
+## Changes after review (2026-11-12, Mert + Fable 5.2)
+1. **Reframed as the decision layer after a measurement model.** `recist.py` takes structured lesion
+   measurements over time (what a segmentation model would output). The report text is a cross-check:
+   "second read" flags reports whose stated impression disagrees with the RECIST logic.
+2. **Fair baseline.** Run the small model (`qwen2.5:7b-instruct`) and the strongest local one (`qwen3.8:27b`),
+   report both honestly.
+3. **Audit trail.** Every decision returns the rule and the numbers behind it. Every rule has a hand-made test.
+4. Bidimensional sizes ("40 x 30 mm") in reports: code uses the longest diameter for non-nodal lesions and the
+   short axis for lymph nodes. No `requests`: standard library only.
+5. Build happens in this session on Fable 5.2; BUILD_LOG.md says who caught each mistake (a test, the eval, Mert).

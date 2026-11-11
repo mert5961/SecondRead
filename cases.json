@@ -1,0 +1,4761 @@
+[
+ {
+  "id": "node_12mm_is_non_target",
+  "kind": "edge",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      30,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      12
+     ],
+     [
+      12,
+      8
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 6 liver lesion measuring 4.0 x 3.0 cm.\n- Left para-aortic lymph node measuring 2.0 x 1.2 cm.\n\nFOLLOW-UP 1:\n- Left para-aortic lymph node: 1.2 x 0.8 cm.\n- The segment 6 liver lesion now measures 3.0 x 2.2 cm.",
+  "stated": "PD"
+ },
+ {
+  "id": "node_15mm_is_target",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      15
+     ],
+     [
+      16,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      15
+     ],
+     [
+      24,
+      8
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right upper lobe nodule measuring 20 x 15 mm.\n- Right hilar lymph node measuring 25 x 15 mm.\n\nFOLLOW-UP 1:\n- The right hilar lymph node now measures 24 x 8 mm.\n- Right upper lobe nodule: 16 x 12 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "three_liver_lesions_two_targets",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      30,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      22
+     ],
+     [
+      22,
+      16
+     ]
+    ]
+   },
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      20
+     ],
+     [
+      25,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      15
+     ],
+     [
+      10,
+      8
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 4 liver lesion measuring 30 x 22 mm.\n- Left lower lobe mass measuring 20 x 15 mm.\n- Segment 6 liver lesion measuring 40 x 30 mm.\n- Segment 8 liver lesion measuring 25 x 20 mm.\n\nFOLLOW-UP 1:\n- Segment 4 liver lesion: 22 x 16 mm.\n- Left lower lobe mass: 10 x 8 mm.\n- Segment 6 liver lesion: 30 x 22 mm.\n- The segment 8 liver lesion is unchanged.",
+  "stated": "PR"
+ },
+ {
+  "id": "seven_lesions_five_targets",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      50,
+      40
+     ],
+     [
+      34,
+      28
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      45,
+      35
+     ],
+     [
+      30,
+      24
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      28,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      35,
+      28
+     ],
+     [
+      24,
+      18
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      22
+     ],
+     [
+      20,
+      15
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      20
+     ],
+     [
+      28,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      26,
+      20
+     ],
+     [
+      26,
+      20
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 28 x 20 mm.\n- Right renal mass measuring 30 x 22 mm.\n- Right upper lobe nodule measuring 35 x 28 mm.\n- Segment 4 liver lesion measuring 45 x 35 mm.\n- Left lower lobe mass measuring 40 x 30 mm.\n- Splenic lesion measuring 26 x 20 mm.\n- Segment 6 liver lesion measuring 50 x 40 mm.\n\nFOLLOW-UP 1:\n- The right upper lobe nodule now measures 24 x 18 mm.\n- The segment 4 liver lesion now measures 30 x 24 mm.\n- The splenic lesion now measures 26 x 20 mm.\n- The left adrenal mass is unchanged.\n- The left lower lobe mass now measures 28 x 20 mm.\n- Segment 6 liver lesion: 34 x 28 mm.\n- The right renal mass now measures 20 x 15 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "plus_19_percent_is_sd",
+  "kind": "edge",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      60,
+      45
+     ],
+     [
+      70,
+      50
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      49,
+      35
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left lower lobe mass measuring 40 x 30 mm.\n- Segment 6 liver lesion measuring 60 x 45 mm.\n\nFOLLOW-UP 1:\n- The left lower lobe mass now measures 49 x 35 mm.\n- Segment 6 liver lesion: 70 x 50 mm.",
+  "stated": "CR"
+ },
+ {
+  "id": "plus_20_percent_is_pd",
+  "kind": "edge",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      60,
+      45
+     ],
+     [
+      71,
+      50
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      49,
+      35
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 6 liver lesion measuring 60 x 45 mm.\n- Left lower lobe mass measuring 40 x 30 mm.\n\nFOLLOW-UP 1:\n- Left lower lobe mass: 49 x 35 mm.\n- The segment 6 liver lesion now measures 71 x 50 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "plus_20_percent_but_4mm_is_sd",
+  "kind": "edge",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      10,
+      8
+     ],
+     [
+      12,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      10,
+      8
+     ],
+     [
+      12,
+      10
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 4 liver lesion measuring 10 x 8 mm.\n- Right upper lobe nodule measuring 10 x 8 mm.\n\nFOLLOW-UP 1:\n- The right upper lobe nodule now measures 12 x 9 mm.\n- The segment 4 liver lesion now measures 12 x 10 mm.",
+  "stated": "SD"
+ },
+ {
+  "id": "plus_25_percent_and_5mm_is_pd",
+  "kind": "edge",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      10,
+      8
+     ],
+     [
+      13,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      10,
+      8
+     ],
+     [
+      12,
+      10
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 4 liver lesion measuring 1.0 x 0.8 cm.\n- Right upper lobe nodule measuring 1.0 x 0.8 cm.\n\nFOLLOW-UP 1:\n- The segment 4 liver lesion now measures 1.2 x 1.0 cm.\n- The right upper lobe nodule now measures 1.3 x 0.9 cm.",
+  "stated": "PD"
+ },
+ {
+  "id": "pd_from_nadir_not_baseline",
+  "kind": "edge",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      60,
+      45
+     ],
+     [
+      30,
+      22
+     ],
+     [
+      37,
+      28
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      25,
+      18
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left lower lobe mass measuring 40 x 30 mm.\n- Segment 6 liver lesion measuring 60 x 45 mm.\n\nFOLLOW-UP 1:\n- Segment 6 liver lesion: 30 x 22 mm.\n- The left lower lobe mass now measures 20 x 15 mm.\n\nFOLLOW-UP 2:\n- Left lower lobe mass: 25 x 18 mm.\n- The segment 6 liver lesion now measures 37 x 28 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "pr_held_after_small_regrowth",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      60,
+      45
+     ],
+     [
+      30,
+      22
+     ],
+     [
+      33,
+      25
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      20,
+      15
+     ],
+     [
+      25,
+      18
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left lower lobe mass measuring 40 x 30 mm.\n- Segment 6 liver lesion measuring 60 x 45 mm.\n\nFOLLOW-UP 1:\n- Segment 6 liver lesion: 30 x 22 mm.\n- The left lower lobe mass now measures 20 x 15 mm.\n\nFOLLOW-UP 2:\n- The segment 6 liver lesion now measures 33 x 25 mm.\n- The left lower lobe mass now measures 25 x 18 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "new_lesion_with_shrinking_targets",
+  "kind": "edge",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      60,
+      45
+     ],
+     [
+      36,
+      28
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      24,
+      18
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     null,
+     [
+      12,
+      10
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 6 liver lesion measuring 60 x 45 mm.\n- Left lower lobe mass measuring 40 x 30 mm.\n\nFOLLOW-UP 1:\n- New segment 4 liver lesion measuring 12 x 10 mm.\n- The segment 6 liver lesion now measures 36 x 28 mm.\n- The left lower lobe mass now measures 24 x 18 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "new_node_under_10mm_is_not_new_lesion",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      60,
+      45
+     ],
+     [
+      36,
+      28
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      24,
+      18
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     null,
+     [
+      9,
+      7
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 6 liver lesion measuring 60 x 45 mm.\n- Left lower lobe mass measuring 40 x 30 mm.\n\nFOLLOW-UP 1:\n- New left axillary lymph node measuring 9 x 7 mm.\n- Segment 6 liver lesion: 36 x 28 mm.\n- The left lower lobe mass now measures 24 x 18 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "cr_with_residual_8mm_node",
+  "kind": "edge",
+  "expected": "CR",
+  "lesions": [
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      15
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      18
+     ],
+     [
+      12,
+      8
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right hilar lymph node measuring 30 x 18 mm.\n- Right upper lobe nodule measuring 20 x 15 mm.\n\nFOLLOW-UP 1:\n- The right hilar lymph node now measures 12 x 8 mm.\n- The right upper lobe nodule is no longer visible.",
+  "stated": "CR"
+ },
+ {
+  "id": "node_10mm_blocks_cr",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      15
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      18
+     ],
+     [
+      14,
+      10
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right hilar lymph node measuring 30 x 18 mm.\n- Right upper lobe nodule measuring 20 x 15 mm.\n\nFOLLOW-UP 1:\n- The right hilar lymph node now measures 14 x 10 mm.\n- The right upper lobe nodule is no longer visible.",
+  "stated": "PR"
+ },
+ {
+  "id": "target_cr_non_target_persists",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      22
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "sclerotic bone lesions",
+    "organ": "bone",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Segment 6 liver lesion measuring 30 x 22 mm.\n\nFOLLOW-UP 1:\n- Sclerotic bone lesions persist, not measurable.\n- The segment 6 liver lesion is no longer visible.",
+  "stated": "CR"
+ },
+ {
+  "id": "non_target_unequivocal_progression",
+  "kind": "edge",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      22
+     ],
+     [
+      30,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "peritoneal thickening",
+    "organ": "peritoneum",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": true,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Peritoneal thickening, not measurable.\n- Segment 6 liver lesion measuring 30 x 22 mm.\n\nFOLLOW-UP 1:\n- The segment 6 liver lesion is unchanged.\n- Marked, unequivocal increase in peritoneal thickening.",
+  "stated": "PD"
+ },
+ {
+  "id": "node_long_axis_trap",
+  "kind": "edge",
+  "expected": "CR",
+  "lesions": [
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      15
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      16
+     ],
+     [
+      28,
+      9
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Subcarinal lymph node measuring 3.0 x 1.6 cm.\n- Left lower lobe mass measuring 2.0 x 1.5 cm.\n\nFOLLOW-UP 1:\n- The left lower lobe mass has resolved.\n- The subcarinal lymph node now measures 2.8 x 0.9 cm.",
+  "stated": "CR"
+ },
+ {
+  "id": "three_nodes_two_targets",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      22
+     ],
+     [
+      20,
+      14
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      20
+     ],
+     [
+      18,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      18
+     ],
+     [
+      25,
+      18
+     ]
+    ]
+   },
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      22
+     ],
+     [
+      22,
+      16
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left para-aortic lymph node measuring 2.8 x 2.0 cm.\n- Segment 6 liver lesion measuring 3.0 x 2.2 cm.\n- Left axillary lymph node measuring 2.5 x 1.8 cm.\n- Subcarinal lymph node measuring 3.0 x 2.2 cm.\n\nFOLLOW-UP 1:\n- The subcarinal lymph node now measures 2.0 x 1.4 cm.\n- Segment 6 liver lesion: 2.2 x 1.6 cm.\n- Left para-aortic lymph node: 1.8 x 1.2 cm.\n- The left axillary lymph node is unchanged.",
+  "stated": "PR"
+ },
+ {
+  "id": "sub_centimetre_lesion_is_non_target",
+  "kind": "edge",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      28,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      8,
+      6
+     ],
+     [
+      9,
+      7
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right upper lobe nodule measuring 8 x 6 mm.\n- Left lower lobe mass measuring 40 x 30 mm.\n\nFOLLOW-UP 1:\n- The left lower lobe mass now measures 28 x 20 mm.\n- Right upper lobe nodule: 9 x 7 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "minus_29_percent_is_sd",
+  "kind": "edge",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      60,
+      45
+     ],
+     [
+      43,
+      30
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      30
+     ],
+     [
+      28,
+      20
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 6 liver lesion measuring 60 x 45 mm.\n- Left lower lobe mass measuring 40 x 30 mm.\n\nFOLLOW-UP 1:\n- Segment 6 liver lesion: 43 x 30 mm.\n- The left lower lobe mass now measures 28 x 20 mm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_01",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      43,
+      40
+     ],
+     [
+      29,
+      27
+     ],
+     [
+      17,
+      16
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      16,
+      11
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      8,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      43,
+      40
+     ],
+     [
+      32,
+      30
+     ],
+     [
+      20,
+      19
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 4.3 x 4.0 cm.\n- Left para-aortic lymph node measuring 1.6 x 1.1 cm.\n- Segment 6 liver lesion measuring 4.3 x 4.0 cm.\n\nFOLLOW-UP 1:\n- The left adrenal mass now measures 2.9 x 2.7 cm.\n- The left para-aortic lymph node now measures 1.2 x 0.8 cm.\n- Segment 6 liver lesion: 3.2 x 3.0 cm.\n\nFOLLOW-UP 2:\n- Segment 6 liver lesion: 2.0 x 1.9 cm.\n- The left para-aortic lymph node now measures 0.8 x 0.6 cm.\n- The left adrenal mass now measures 1.7 x 1.6 cm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_02",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "pancreatic tail mass",
+    "organ": "pancreas",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      21
+     ],
+     [
+      18,
+      16
+     ],
+     [
+      16,
+      14
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      15
+     ],
+     [
+      17,
+      11
+     ],
+     [
+      14,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "right lower lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      38,
+      35
+     ],
+     [
+      32,
+      29
+     ],
+     [
+      26,
+      24
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      37,
+      24
+     ],
+     [
+      25,
+      16
+     ],
+     [
+      15,
+      10
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      29,
+      21
+     ],
+     [
+      20,
+      14
+     ],
+     [
+      17,
+      12
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left lower lobe mass measuring 3.7 x 2.4 cm.\n- Right upper lobe nodule measuring 2.9 x 2.1 cm.\n- Right lower lobe nodule measuring 3.8 x 3.5 cm.\n- Splenic lesion measuring 2.4 x 1.5 cm.\n- Pancreatic tail mass measuring 2.4 x 2.1 cm.\n\nFOLLOW-UP 1:\n- Left lower lobe mass: 2.5 x 1.6 cm.\n- Pancreatic tail mass: 1.8 x 1.6 cm.\n- The splenic lesion now measures 1.7 x 1.1 cm.\n- Right lower lobe nodule: 3.2 x 2.9 cm.\n- Right upper lobe nodule: 2.0 x 1.4 cm.\n\nFOLLOW-UP 2:\n- The pancreatic tail mass now measures 1.6 x 1.4 cm.\n- The right lower lobe nodule now measures 2.6 x 2.4 cm.\n- Right upper lobe nodule: 1.7 x 1.2 cm.\n- The left lower lobe mass now measures 1.5 x 1.0 cm.\n- Splenic lesion: 1.4 x 0.9 cm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_03",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      22,
+      20
+     ],
+     [
+      16,
+      15
+     ]
+    ]
+   },
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      42,
+      32
+     ],
+     [
+      29,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      35,
+      24
+     ],
+     [
+      27,
+      19
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 4 liver lesion measuring 22 x 20 mm.\n- Left axillary lymph node measuring 35 x 24 mm.\n- Segment 8 liver lesion measuring 42 x 32 mm.\n\nFOLLOW-UP 1:\n- The segment 8 liver lesion now measures 29 x 22 mm.\n- The segment 4 liver lesion now measures 16 x 15 mm.\n- The left axillary lymph node now measures 27 x 19 mm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_04",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      21,
+      18
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      14,
+      12
+     ],
+     [
+      9,
+      8
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      38,
+      29
+     ],
+     [
+      23,
+      18
+     ],
+     [
+      13,
+      10
+     ],
+     [
+      8,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      15
+     ],
+     [
+      21,
+      11
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      12,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      14
+     ],
+     [
+      18,
+      9
+     ],
+     [
+      14,
+      7
+     ],
+     [
+      11,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      26,
+      19
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      13,
+      10
+     ],
+     [
+      10,
+      7
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 2.1 x 1.8 cm.\n- Splenic lesion measuring 2.8 x 1.5 cm.\n- Portocaval lymph node measuring 2.6 x 1.9 cm.\n- Segment 4 liver lesion measuring 3.8 x 2.9 cm.\n- Left para-aortic lymph node measuring 2.8 x 1.4 cm.\n\nFOLLOW-UP 1:\n- Left para-aortic lymph node: 1.8 x 0.9 cm.\n- The splenic lesion now measures 2.1 x 1.1 cm.\n- The segment 4 liver lesion now measures 2.3 x 1.8 cm.\n- The left adrenal mass now measures 1.9 x 1.6 cm.\n- Portocaval lymph node: 1.5 x 1.1 cm.\n\nFOLLOW-UP 2:\n- The left adrenal mass now measures 1.4 x 1.2 cm.\n- Segment 4 liver lesion: 1.3 x 1.0 cm.\n- Splenic lesion: 1.6 x 0.9 cm.\n- The left para-aortic lymph node now measures 1.4 x 0.7 cm.\n- The portocaval lymph node now measures 1.3 x 1.0 cm.\n\nFOLLOW-UP 3:\n- Left para-aortic lymph node: 1.1 x 0.6 cm.\n- Segment 4 liver lesion: 0.8 x 0.6 cm.\n- The left adrenal mass now measures 0.9 x 0.8 cm.\n- Splenic lesion: 1.2 x 0.6 cm.\n- The portocaval lymph node now measures 1.0 x 0.7 cm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_05",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      44,
+      31
+     ],
+     [
+      49,
+      35
+     ],
+     [
+      54,
+      38
+     ],
+     [
+      67,
+      47
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      22,
+      8
+     ],
+     [
+      27,
+      10
+     ],
+     [
+      31,
+      11
+     ],
+     [
+      35,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      14,
+      12
+     ],
+     [
+      17,
+      15
+     ],
+     [
+      21,
+      18
+     ],
+     [
+      23,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      19,
+      15
+     ],
+     [
+      21,
+      17
+     ],
+     [
+      27,
+      21
+     ],
+     [
+      30,
+      24
+     ]
+    ]
+   },
+   {
+    "name": "sclerotic bone lesions",
+    "organ": "bone",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present",
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Segment 4 liver lesion measuring 44 x 31 mm.\n- Left adrenal mass measuring 19 x 15 mm.\n- Right hilar lymph node measuring 22 x 8 mm.\n- Subcarinal lymph node measuring 14 x 12 mm.\n\nFOLLOW-UP 1:\n- The left adrenal mass now measures 21 x 17 mm.\n- Subcarinal lymph node: 17 x 15 mm.\n- The right hilar lymph node now measures 27 x 10 mm.\n- Sclerotic bone lesions persist, not measurable.\n- Segment 4 liver lesion: 49 x 35 mm.\n\nFOLLOW-UP 2:\n- The segment 4 liver lesion now measures 54 x 38 mm.\n- Subcarinal lymph node: 21 x 18 mm.\n- The right hilar lymph node now measures 31 x 11 mm.\n- Sclerotic bone lesions persist, not measurable.\n- Left adrenal mass: 27 x 21 mm.\n\nFOLLOW-UP 3:\n- The subcarinal lymph node now measures 23 x 20 mm.\n- The left adrenal mass now measures 30 x 24 mm.\n- Sclerotic bone lesions persist, not measurable.\n- Right hilar lymph node: 35 x 13 mm.\n- Segment 4 liver lesion: 67 x 47 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_06",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      34,
+      21
+     ],
+     [
+      26,
+      16
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      27,
+      18
+     ],
+     [
+      14,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      23,
+      15
+     ],
+     [
+      18,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      12
+     ],
+     [
+      14,
+      7
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Splenic lesion measuring 34 x 21 mm.\n- Left axillary lymph node measuring 23 x 15 mm.\n- Right renal mass measuring 27 x 18 mm.\n- Portocaval lymph node measuring 25 x 12 mm.\n\nFOLLOW-UP 1:\n- The right renal mass now measures 14 x 9 mm.\n- The splenic lesion now measures 26 x 16 mm.\n- Portocaval lymph node: 14 x 7 mm.\n- Left axillary lymph node: 18 x 12 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_07",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      31,
+      21
+     ],
+     [
+      21,
+      14
+     ],
+     [
+      14,
+      9
+     ],
+     [
+      9,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      18,
+      15
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      6,
+      5
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      23
+     ],
+     [
+      21,
+      19
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      7,
+      6
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": true,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left para-aortic lymph node measuring 3.1 x 2.1 cm.\n- Right upper lobe nodule measuring 2.5 x 2.3 cm.\n- Left axillary lymph node measuring 1.8 x 1.5 cm.\n\nFOLLOW-UP 1:\n- Left para-aortic lymph node: 2.1 x 1.4 cm.\n- Left axillary lymph node: 1.0 x 0.8 cm.\n- Right upper lobe nodule: 2.1 x 1.9 cm.\n\nFOLLOW-UP 2:\n- The left axillary lymph node now measures 0.9 x 0.8 cm.\n- The right upper lobe nodule now measures 1.2 x 1.1 cm.\n- Left para-aortic lymph node: 1.4 x 0.9 cm.\n\nFOLLOW-UP 3:\n- Right upper lobe nodule: 0.7 x 0.6 cm.\n- Left axillary lymph node: 0.6 x 0.5 cm.\n- Left para-aortic lymph node: 0.9 x 0.6 cm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_08",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      22,
+      17
+     ],
+     [
+      19,
+      15
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      44,
+      34
+     ],
+     [
+      35,
+      27
+     ]
+    ]
+   },
+   {
+    "name": "sclerotic bone lesions",
+    "organ": "bone",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Left lower lobe mass measuring 4.4 x 3.4 cm.\n- Segment 8 liver lesion measuring 2.2 x 1.7 cm.\n\nFOLLOW-UP 1:\n- Left lower lobe mass: 3.5 x 2.7 cm.\n- The segment 8 liver lesion now measures 1.9 x 1.5 cm.\n- Sclerotic bone lesions persist, not measurable.",
+  "stated": "CR"
+ },
+ {
+  "id": "random_09",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      47,
+      37
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      27,
+      20
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      21,
+      19
+     ],
+     [
+      11,
+      10
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      18,
+      16
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      17
+     ],
+     [
+      11,
+      7
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      12,
+      6
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "small right pleural effusion",
+    "organ": "pleura",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     [
+      0,
+      0
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 12 x 6 mm.\n- Splenic lesion measuring 47 x 37 mm.\n- Left para-aortic lymph node measuring 28 x 17 mm.\n- Portocaval lymph node measuring 21 x 19 mm.\n- Segment 4 liver lesion measuring 18 x 16 mm.\n- Small right pleural effusion, not measurable.\n- Right upper lobe nodule measuring 27 x 20 mm.\n\nFOLLOW-UP 1:\n- The left adrenal mass has resolved.\n- The portocaval lymph node now measures 11 x 10 mm.\n- Small right pleural effusion have resolved.\n- The splenic lesion has resolved.\n- The segment 4 liver lesion has resolved.\n- The right upper lobe nodule is no longer visible.\n- Left para-aortic lymph node: 11 x 7 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_10",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      9,
+      6
+     ],
+     [
+      5,
+      3
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      13,
+      7
+     ],
+     [
+      9,
+      5
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      12
+     ],
+     [
+      18,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      41,
+      37
+     ],
+     [
+      31,
+      28
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      36,
+      24
+     ],
+     [
+      28,
+      19
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right upper lobe nodule measuring 41 x 37 mm.\n- Right renal mass measuring 13 x 7 mm.\n- Left para-aortic lymph node measuring 24 x 12 mm.\n- Subcarinal lymph node measuring 36 x 24 mm.\n- Left lower lobe mass measuring 9 x 6 mm.\n\nFOLLOW-UP 1:\n- The left lower lobe mass now measures 5 x 3 mm.\n- The left para-aortic lymph node now measures 18 x 9 mm.\n- The right upper lobe nodule now measures 31 x 28 mm.\n- Subcarinal lymph node: 28 x 19 mm.\n- Right renal mass: 9 x 5 mm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_11",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      10,
+      8
+     ],
+     [
+      6,
+      5
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      27,
+      25
+     ],
+     [
+      21,
+      19
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      17,
+      8
+     ],
+     [
+      14,
+      7
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      27,
+      24
+     ],
+     [
+      22,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      15
+     ],
+     [
+      23,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      33,
+      30
+     ],
+     [
+      24,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     null,
+     [
+      11,
+      8
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left para-aortic lymph node measuring 17 x 8 mm.\n- Portocaval lymph node measuring 28 x 15 mm.\n- Subcarinal lymph node measuring 27 x 25 mm.\n- Right upper lobe nodule measuring 33 x 30 mm.\n- Right hilar lymph node measuring 10 x 8 mm.\n- Left axillary lymph node measuring 27 x 24 mm.\n\nFOLLOW-UP 1:\n- New left adrenal mass measuring 11 x 8 mm.\n- The left para-aortic lymph node now measures 14 x 7 mm.\n- Right upper lobe nodule: 24 x 22 mm.\n- Subcarinal lymph node: 21 x 19 mm.\n- The portocaval lymph node now measures 23 x 12 mm.\n- Right hilar lymph node: 6 x 5 mm.\n- Left axillary lymph node: 22 x 20 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_12",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "pancreatic tail mass",
+    "organ": "pancreas",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      12
+     ],
+     [
+      25,
+      12
+     ],
+     [
+      28,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      11
+     ],
+     [
+      20,
+      11
+     ],
+     [
+      19,
+      10
+     ]
+    ]
+   },
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      15,
+      11
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      14,
+      10
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      45,
+      37
+     ],
+     [
+      41,
+      34
+     ],
+     [
+      41,
+      34
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      15,
+      8
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      16,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      29,
+      26
+     ],
+     [
+      29,
+      26
+     ],
+     [
+      28,
+      25
+     ]
+    ]
+   },
+   {
+    "name": "peritoneal thickening",
+    "organ": "peritoneum",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right hilar lymph node measuring 15 x 8 mm.\n- Subcarinal lymph node measuring 29 x 26 mm.\n- Segment 6 liver lesion measuring 15 x 11 mm.\n- Peritoneal thickening, not measurable.\n- Segment 8 liver lesion measuring 20 x 11 mm.\n- Pancreatic tail mass measuring 25 x 12 mm.\n- Splenic lesion measuring 45 x 37 mm.\n\nFOLLOW-UP 1:\n- The segment 8 liver lesion is unchanged.\n- The subcarinal lymph node is unchanged.\n- The pancreatic tail mass is unchanged.\n- The right hilar lymph node now measures 16 x 9 mm.\n- Peritoneal thickening persist, not measurable.\n- The segment 6 liver lesion now measures 15 x 11 mm.\n- The splenic lesion now measures 41 x 34 mm.\n\nFOLLOW-UP 2:\n- Subcarinal lymph node: 28 x 25 mm.\n- The pancreatic tail mass now measures 28 x 13 mm.\n- Segment 8 liver lesion: 19 x 10 mm.\n- Peritoneal thickening persist, not measurable.\n- The splenic lesion is unchanged.\n- The right hilar lymph node is unchanged.\n- The segment 6 liver lesion now measures 14 x 10 mm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_13",
+  "kind": "random",
+  "expected": "CR",
+  "lesions": [
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      20
+     ],
+     [
+      13,
+      9
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      10,
+      7
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      32,
+      20
+     ],
+     [
+      16,
+      10
+     ],
+     [
+      7,
+      4
+     ],
+     [
+      9,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "small right pleural effusion",
+    "organ": "pleura",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present",
+     "present",
+     [
+      0,
+      0
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Small right pleural effusion, not measurable.\n- Right hilar lymph node measuring 30 x 20 mm.\n- Portocaval lymph node measuring 32 x 20 mm.\n\nFOLLOW-UP 1:\n- Small right pleural effusion persist, not measurable.\n- The right hilar lymph node now measures 13 x 9 mm.\n- The portocaval lymph node now measures 16 x 10 mm.\n\nFOLLOW-UP 2:\n- Small right pleural effusion persist, not measurable.\n- Portocaval lymph node: 7 x 4 mm.\n- Right hilar lymph node: 8 x 5 mm.\n\nFOLLOW-UP 3:\n- The right hilar lymph node now measures 10 x 7 mm.\n- Portocaval lymph node: 9 x 6 mm.\n- Small right pleural effusion have resolved.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_14",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      20
+     ],
+     [
+      32,
+      23
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      29,
+      23
+     ],
+     [
+      37,
+      29
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Subcarinal lymph node measuring 28 x 20 mm.\n- Left axillary lymph node measuring 29 x 23 mm.\n\nFOLLOW-UP 1:\n- Subcarinal lymph node: 32 x 23 mm.\n- Left axillary lymph node: 37 x 29 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_15",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      16,
+      14
+     ],
+     [
+      11,
+      10
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      23
+     ],
+     [
+      14,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      44,
+      35
+     ],
+     [
+      28,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      11
+     ],
+     [
+      19,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      10,
+      8
+     ],
+     [
+      8,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "right lower lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     null,
+     [
+      16,
+      10
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 16 x 14 mm.\n- Left lower lobe mass measuring 10 x 8 mm.\n- Splenic lesion measuring 44 x 35 mm.\n- Portocaval lymph node measuring 24 x 11 mm.\n- Left para-aortic lymph node measuring 25 x 23 mm.\n\nFOLLOW-UP 1:\n- The left para-aortic lymph node now measures 14 x 13 mm.\n- Left adrenal mass: 11 x 10 mm.\n- New right lower lobe nodule measuring 16 x 10 mm.\n- The splenic lesion now measures 28 x 22 mm.\n- Portocaval lymph node: 19 x 9 mm.\n- Left lower lobe mass: 8 x 6 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_16",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      26,
+      18
+     ],
+     [
+      17,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      41,
+      35
+     ],
+     [
+      26,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "sclerotic bone lesions",
+    "organ": "bone",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present"
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     null,
+     [
+      13,
+      12
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": true,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left lower lobe mass measuring 41 x 35 mm.\n- Sclerotic bone lesions, not measurable.\n- Segment 4 liver lesion measuring 26 x 18 mm.\n\nFOLLOW-UP 1:\n- New left adrenal mass measuring 13 x 12 mm.\n- Left lower lobe mass: 26 x 22 mm.\n- Segment 4 liver lesion: 17 x 12 mm.\n- Marked, unequivocal increase in sclerotic bone lesions.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_17",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      29,
+      20
+     ],
+     [
+      28,
+      19
+     ],
+     [
+      30,
+      21
+     ],
+     [
+      32,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      27,
+      24
+     ],
+     [
+      27,
+      24
+     ],
+     [
+      30,
+      27
+     ],
+     [
+      28,
+      25
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      31
+     ],
+     [
+      43,
+      33
+     ],
+     [
+      41,
+      32
+     ],
+     [
+      41,
+      32
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      16,
+      13
+     ],
+     [
+      16,
+      13
+     ],
+     [
+      15,
+      12
+     ],
+     [
+      14,
+      11
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      39,
+      34
+     ],
+     [
+      41,
+      36
+     ],
+     [
+      41,
+      36
+     ],
+     [
+      39,
+      34
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right upper lobe nodule measuring 4.0 x 3.1 cm.\n- Left adrenal mass measuring 3.9 x 3.4 cm.\n- Left para-aortic lymph node measuring 1.6 x 1.3 cm.\n- Segment 4 liver lesion measuring 2.9 x 2.0 cm.\n- Left lower lobe mass measuring 2.7 x 2.4 cm.\n\nFOLLOW-UP 1:\n- The left lower lobe mass now measures 2.7 x 2.4 cm.\n- The left para-aortic lymph node is unchanged.\n- Segment 4 liver lesion: 2.8 x 1.9 cm.\n- The right upper lobe nodule now measures 4.3 x 3.3 cm.\n- The left adrenal mass now measures 4.1 x 3.6 cm.\n\nFOLLOW-UP 2:\n- The right upper lobe nodule now measures 4.1 x 3.2 cm.\n- Segment 4 liver lesion: 3.0 x 2.1 cm.\n- The left adrenal mass now measures 4.1 x 3.6 cm.\n- The left lower lobe mass now measures 3.0 x 2.7 cm.\n- Left para-aortic lymph node: 1.5 x 1.2 cm.\n\nFOLLOW-UP 3:\n- Segment 4 liver lesion: 3.2 x 2.2 cm.\n- The right upper lobe nodule is unchanged.\n- The left adrenal mass now measures 3.9 x 3.4 cm.\n- The left lower lobe mass now measures 2.8 x 2.5 cm.\n- Left para-aortic lymph node: 1.4 x 1.1 cm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_18",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      19,
+      17
+     ],
+     [
+      20,
+      18
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      12,
+      10
+     ],
+     [
+      11,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      34,
+      20
+     ],
+     [
+      34,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "right lower lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      19,
+      17
+     ],
+     [
+      20,
+      18
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Portocaval lymph node measuring 1.2 x 1.0 cm.\n- Right lower lobe nodule measuring 1.9 x 1.7 cm.\n- Left axillary lymph node measuring 3.4 x 2.0 cm.\n- Subcarinal lymph node measuring 1.9 x 1.7 cm.\n\nFOLLOW-UP 1:\n- The left axillary lymph node is unchanged.\n- Portocaval lymph node: 1.1 x 0.9 cm.\n- Subcarinal lymph node: 2.0 x 1.8 cm.\n- Right lower lobe nodule: 2.0 x 1.8 cm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_19",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      22,
+      10
+     ],
+     [
+      26,
+      12
+     ],
+     [
+      28,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      50,
+      37
+     ],
+     [
+      55,
+      41
+     ],
+     [
+      72,
+      53
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      24
+     ],
+     [
+      34,
+      27
+     ],
+     [
+      39,
+      31
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      18
+     ],
+     [
+      28,
+      20
+     ],
+     [
+      30,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      29,
+      20
+     ],
+     [
+      33,
+      23
+     ],
+     [
+      46,
+      32
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      22,
+      13
+     ],
+     [
+      28,
+      17
+     ],
+     [
+      30,
+      18
+     ]
+    ]
+   },
+   {
+    "name": "small right pleural effusion",
+    "organ": "pleura",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present",
+     "present"
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     null,
+     null,
+     [
+      18,
+      17
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 4 liver lesion measuring 22 x 10 mm.\n- Right hilar lymph node measuring 22 x 13 mm.\n- Right renal mass measuring 50 x 37 mm.\n- Right upper lobe nodule measuring 30 x 24 mm.\n- Small right pleural effusion, not measurable.\n- Segment 8 liver lesion measuring 29 x 20 mm.\n- Left adrenal mass measuring 25 x 18 mm.\n\nFOLLOW-UP 1:\n- Right renal mass: 55 x 41 mm.\n- Left adrenal mass: 28 x 20 mm.\n- The segment 8 liver lesion now measures 33 x 23 mm.\n- Small right pleural effusion persist, not measurable.\n- The right upper lobe nodule now measures 34 x 27 mm.\n- Right hilar lymph node: 28 x 17 mm.\n- The segment 4 liver lesion now measures 26 x 12 mm.\n\nFOLLOW-UP 2:\n- The right upper lobe nodule now measures 39 x 31 mm.\n- Segment 4 liver lesion: 28 x 13 mm.\n- The segment 8 liver lesion now measures 46 x 32 mm.\n- New left lower lobe mass measuring 18 x 17 mm.\n- Small right pleural effusion persist, not measurable.\n- The right hilar lymph node now measures 30 x 18 mm.\n- Left adrenal mass: 30 x 22 mm.\n- Right renal mass: 72 x 53 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_20",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      22,
+      8
+     ],
+     [
+      16,
+      6
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      9,
+      3
+     ]
+    ]
+   },
+   {
+    "name": "pancreatic tail mass",
+    "organ": "pancreas",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      36,
+      28
+     ],
+     [
+      25,
+      19
+     ],
+     [
+      20,
+      16
+     ],
+     [
+      17,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      16
+     ],
+     [
+      11,
+      9
+     ],
+     [
+      9,
+      7
+     ],
+     [
+      6,
+      5
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      18
+     ],
+     [
+      14,
+      10
+     ],
+     [
+      12,
+      9
+     ],
+     [
+      8,
+      6
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Pancreatic tail mass measuring 36 x 28 mm.\n- Segment 4 liver lesion measuring 24 x 18 mm.\n- Left lower lobe mass measuring 20 x 16 mm.\n- Segment 8 liver lesion measuring 22 x 8 mm.\n\nFOLLOW-UP 1:\n- The pancreatic tail mass now measures 25 x 19 mm.\n- The segment 8 liver lesion now measures 16 x 6 mm.\n- Left lower lobe mass: 11 x 9 mm.\n- Segment 4 liver lesion: 14 x 10 mm.\n\nFOLLOW-UP 2:\n- Pancreatic tail mass: 20 x 16 mm.\n- Segment 4 liver lesion: 12 x 9 mm.\n- Segment 8 liver lesion: 10 x 4 mm.\n- The left lower lobe mass now measures 9 x 7 mm.\n\nFOLLOW-UP 3:\n- The left lower lobe mass now measures 6 x 5 mm.\n- The pancreatic tail mass now measures 17 x 13 mm.\n- Segment 4 liver lesion: 8 x 6 mm.\n- The segment 8 liver lesion now measures 9 x 3 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_21",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      37,
+      30
+     ],
+     [
+      22,
+      18
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      18,
+      8
+     ],
+     [
+      15,
+      7
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left adrenal mass measuring 37 x 30 mm.\n- Right renal mass measuring 18 x 8 mm.\n\nFOLLOW-UP 1:\n- Right renal mass: 15 x 7 mm.\n- The left adrenal mass now measures 22 x 18 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_22",
+  "kind": "random",
+  "expected": "CR",
+  "lesions": [
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      38,
+      29
+     ],
+     [
+      17,
+      13
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "pancreatic tail mass",
+    "organ": "pancreas",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      44,
+      36
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      26
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      18,
+      13
+     ],
+     [
+      10,
+      7
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      41,
+      27
+     ],
+     [
+      18,
+      12
+     ],
+     [
+      12,
+      8
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": true,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Pancreatic tail mass measuring 4.4 x 3.6 cm.\n- Left adrenal mass measuring 1.8 x 1.3 cm.\n- Left lower lobe mass measuring 3.8 x 2.9 cm.\n- Subcarinal lymph node measuring 4.1 x 2.7 cm.\n- Right upper lobe nodule measuring 4.0 x 2.6 cm.\n\nFOLLOW-UP 1:\n- Right upper lobe nodule: 2.0 x 1.3 cm.\n- Left lower lobe mass: 1.7 x 1.3 cm.\n- The left adrenal mass now measures 1.0 x 0.7 cm.\n- Pancreatic tail mass: 1.9 x 1.6 cm.\n- Subcarinal lymph node: 1.8 x 1.2 cm.\n\nFOLLOW-UP 2:\n- The pancreatic tail mass is no longer visible.\n- The right upper lobe nodule has resolved.\n- The left lower lobe mass is no longer visible.\n- The subcarinal lymph node now measures 1.2 x 0.8 cm.\n- The left adrenal mass has resolved.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_23",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      16
+     ],
+     [
+      37,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      19
+     ],
+     [
+      38,
+      26
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      52,
+      40
+     ],
+     [
+      61,
+      47
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      30,
+      19
+     ],
+     [
+      32,
+      20
+     ]
+    ]
+   },
+   {
+    "name": "right lower lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      15,
+      9
+     ],
+     [
+      19,
+      11
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Left axillary lymph node measuring 3.0 x 1.9 cm.\n- Right lower lobe nodule measuring 1.5 x 0.9 cm.\n- Left para-aortic lymph node measuring 2.8 x 1.9 cm.\n- Left lower lobe mass measuring 5.2 x 4.0 cm.\n- Segment 8 liver lesion measuring 3.0 x 1.6 cm.\n\nFOLLOW-UP 1:\n- Segment 8 liver lesion: 3.7 x 2.0 cm.\n- The left axillary lymph node now measures 3.2 x 2.0 cm.\n- Right lower lobe nodule: 1.9 x 1.1 cm.\n- The left lower lobe mass now measures 6.1 x 4.7 cm.\n- The left para-aortic lymph node now measures 3.8 x 2.6 cm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_24",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      41,
+      33
+     ],
+     [
+      44,
+      35
+     ]
+    ]
+   },
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      10,
+      8
+     ],
+     [
+      10,
+      8
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right upper lobe nodule measuring 41 x 33 mm.\n- Segment 8 liver lesion measuring 10 x 8 mm.\n\nFOLLOW-UP 1:\n- The right upper lobe nodule now measures 44 x 35 mm.\n- The segment 8 liver lesion is unchanged.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_25",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "right lower lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      16,
+      14
+     ],
+     [
+      14,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "pancreatic tail mass",
+    "organ": "pancreas",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      27,
+      15
+     ],
+     [
+      22,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      39,
+      28
+     ],
+     [
+      30,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "sclerotic bone lesions",
+    "organ": "bone",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present"
+    ]
+   },
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     null,
+     [
+      18,
+      14
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Sclerotic bone lesions, not measurable.\n- Pancreatic tail mass measuring 2.7 x 1.5 cm.\n- Right lower lobe nodule measuring 1.6 x 1.4 cm.\n- Splenic lesion measuring 3.9 x 2.8 cm.\n\nFOLLOW-UP 1:\n- New segment 6 liver lesion measuring 1.8 x 1.4 cm.\n- Pancreatic tail mass: 2.2 x 1.2 cm.\n- Sclerotic bone lesions persist, not measurable.\n- The splenic lesion now measures 3.0 x 2.2 cm.\n- Right lower lobe nodule: 1.4 x 1.2 cm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_26",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      19,
+      8
+     ],
+     [
+      14,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      39,
+      27
+     ],
+     [
+      28,
+      19
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": true,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Portocaval lymph node measuring 19 x 8 mm.\n- Right hilar lymph node measuring 39 x 27 mm.\n\nFOLLOW-UP 1:\n- The portocaval lymph node now measures 14 x 6 mm.\n- Right hilar lymph node: 28 x 19 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_27",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      38,
+      34
+     ],
+     [
+      15,
+      13
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      22
+     ],
+     [
+      9,
+      7
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      41,
+      28
+     ],
+     [
+      19,
+      13
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      9,
+      6
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      14,
+      12
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      12,
+      10
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      10
+     ],
+     [
+      8,
+      3
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      19
+     ],
+     [
+      10,
+      8
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Splenic lesion measuring 24 x 10 mm.\n- Segment 4 liver lesion measuring 25 x 19 mm.\n- Subcarinal lymph node measuring 14 x 12 mm.\n- Left axillary lymph node measuring 41 x 28 mm.\n- Segment 6 liver lesion measuring 38 x 34 mm.\n- Left adrenal mass measuring 28 x 22 mm.\n\nFOLLOW-UP 1:\n- The segment 4 liver lesion now measures 10 x 8 mm.\n- Segment 6 liver lesion: 15 x 13 mm.\n- The splenic lesion now measures 8 x 3 mm.\n- Left axillary lymph node: 19 x 13 mm.\n- The left adrenal mass now measures 9 x 7 mm.\n- The subcarinal lymph node now measures 5 x 4 mm.\n\nFOLLOW-UP 2:\n- The left axillary lymph node now measures 11 x 8 mm.\n- Left adrenal mass: 4 x 3 mm.\n- Segment 4 liver lesion: 4 x 3 mm.\n- Segment 6 liver lesion: 6 x 5 mm.\n- Subcarinal lymph node: 2 x 2 mm.\n- The splenic lesion now measures 4 x 2 mm.\n\nFOLLOW-UP 3:\n- The segment 6 liver lesion has resolved.\n- Left axillary lymph node: 9 x 6 mm.\n- Subcarinal lymph node: 12 x 10 mm.\n- The splenic lesion is no longer visible.\n- The segment 4 liver lesion has resolved.\n- The left adrenal mass has resolved.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_28",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "pancreatic tail mass",
+    "organ": "pancreas",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      35,
+      33
+     ],
+     [
+      26,
+      25
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      37,
+      28
+     ],
+     [
+      22,
+      17
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      33,
+      26
+     ],
+     [
+      29,
+      23
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      32,
+      19
+     ],
+     [
+      20,
+      12
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      37,
+      23
+     ],
+     [
+      33,
+      21
+     ]
+    ]
+   },
+   {
+    "name": "left lower lobe mass",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      12
+     ],
+     [
+      17,
+      10
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Subcarinal lymph node measuring 3.3 x 2.6 cm.\n- Right upper lobe nodule measuring 3.7 x 2.8 cm.\n- Pancreatic tail mass measuring 3.5 x 3.3 cm.\n- Segment 4 liver lesion measuring 3.2 x 1.9 cm.\n- Left lower lobe mass measuring 2.0 x 1.2 cm.\n- Portocaval lymph node measuring 3.7 x 2.3 cm.\n\nFOLLOW-UP 1:\n- The subcarinal lymph node now measures 2.9 x 2.3 cm.\n- Portocaval lymph node: 3.3 x 2.1 cm.\n- Right upper lobe nodule: 2.2 x 1.7 cm.\n- Segment 4 liver lesion: 2.0 x 1.2 cm.\n- The left lower lobe mass now measures 1.7 x 1.0 cm.\n- The pancreatic tail mass now measures 2.6 x 2.5 cm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_29",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      51,
+      40
+     ],
+     [
+      42,
+      33
+     ],
+     [
+      25,
+      20
+     ],
+     [
+      18,
+      14
+     ]
+    ]
+   },
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      47,
+      35
+     ],
+     [
+      40,
+      30
+     ],
+     [
+      34,
+      25
+     ],
+     [
+      25,
+      19
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      16,
+      12
+     ],
+     [
+      14,
+      10
+     ],
+     [
+      11,
+      8
+     ],
+     [
+      7,
+      5
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      34,
+      21
+     ],
+     [
+      21,
+      13
+     ],
+     [
+      17,
+      10
+     ],
+     [
+      13,
+      8
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      32,
+      20
+     ],
+     [
+      20,
+      12
+     ],
+     [
+      17,
+      11
+     ],
+     [
+      14,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      51,
+      39
+     ],
+     [
+      40,
+      31
+     ],
+     [
+      34,
+      26
+     ],
+     [
+      27,
+      21
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Splenic lesion measuring 51 x 39 mm.\n- Right renal mass measuring 51 x 40 mm.\n- Left para-aortic lymph node measuring 34 x 21 mm.\n- Segment 8 liver lesion measuring 47 x 35 mm.\n- Right upper lobe nodule measuring 32 x 20 mm.\n- Left adrenal mass measuring 16 x 12 mm.\n\nFOLLOW-UP 1:\n- Splenic lesion: 40 x 31 mm.\n- Right renal mass: 42 x 33 mm.\n- Segment 8 liver lesion: 40 x 30 mm.\n- Left para-aortic lymph node: 21 x 13 mm.\n- The left adrenal mass now measures 14 x 10 mm.\n- Right upper lobe nodule: 20 x 12 mm.\n\nFOLLOW-UP 2:\n- Right renal mass: 25 x 20 mm.\n- The splenic lesion now measures 34 x 26 mm.\n- Segment 8 liver lesion: 34 x 25 mm.\n- Left para-aortic lymph node: 17 x 10 mm.\n- Left adrenal mass: 11 x 8 mm.\n- Right upper lobe nodule: 17 x 11 mm.\n\nFOLLOW-UP 3:\n- Left adrenal mass: 7 x 5 mm.\n- Splenic lesion: 27 x 21 mm.\n- The right upper lobe nodule now measures 14 x 9 mm.\n- The right renal mass now measures 18 x 14 mm.\n- The left para-aortic lymph node now measures 13 x 8 mm.\n- The segment 8 liver lesion now measures 25 x 19 mm.",
+  "stated": "CR"
+ },
+ {
+  "id": "random_30",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      35
+     ],
+     [
+      49,
+      43
+     ],
+     [
+      56,
+      49
+     ],
+     [
+      71,
+      62
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      32,
+      26
+     ],
+     [
+      38,
+      31
+     ],
+     [
+      46,
+      37
+     ],
+     [
+      52,
+      42
+     ]
+    ]
+   },
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      19,
+      15
+     ],
+     [
+      25,
+      20
+     ],
+     [
+      28,
+      22
+     ],
+     [
+      33,
+      26
+     ]
+    ]
+   },
+   {
+    "name": "right lower lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      45,
+      33
+     ],
+     [
+      59,
+      43
+     ],
+     [
+      70,
+      51
+     ],
+     [
+      95,
+      70
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      26
+     ],
+     [
+      47,
+      31
+     ],
+     [
+      54,
+      35
+     ],
+     [
+      65,
+      42
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      22,
+      14
+     ],
+     [
+      30,
+      19
+     ],
+     [
+      40,
+      25
+     ],
+     [
+      52,
+      33
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right renal mass measuring 40 x 26 mm.\n- Subcarinal lymph node measuring 22 x 14 mm.\n- Right lower lobe nodule measuring 45 x 33 mm.\n- Right hilar lymph node measuring 19 x 15 mm.\n- Left para-aortic lymph node measuring 32 x 26 mm.\n- Segment 6 liver lesion measuring 40 x 35 mm.\n\nFOLLOW-UP 1:\n- The segment 6 liver lesion now measures 49 x 43 mm.\n- The subcarinal lymph node now measures 30 x 19 mm.\n- Right lower lobe nodule: 59 x 43 mm.\n- Right hilar lymph node: 25 x 20 mm.\n- Right renal mass: 47 x 31 mm.\n- Left para-aortic lymph node: 38 x 31 mm.\n\nFOLLOW-UP 2:\n- Left para-aortic lymph node: 46 x 37 mm.\n- The subcarinal lymph node now measures 40 x 25 mm.\n- Right hilar lymph node: 28 x 22 mm.\n- Right lower lobe nodule: 70 x 51 mm.\n- Segment 6 liver lesion: 56 x 49 mm.\n- Right renal mass: 54 x 35 mm.\n\nFOLLOW-UP 3:\n- Right lower lobe nodule: 95 x 70 mm.\n- Right hilar lymph node: 33 x 26 mm.\n- The left para-aortic lymph node now measures 52 x 42 mm.\n- The segment 6 liver lesion now measures 71 x 62 mm.\n- The right renal mass now measures 65 x 42 mm.\n- The subcarinal lymph node now measures 52 x 33 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_31",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      45,
+      36
+     ],
+     [
+      39,
+      31
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      27
+     ],
+     [
+      22,
+      15
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      33,
+      24
+     ],
+     [
+      22,
+      16
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": true,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right renal mass measuring 33 x 24 mm.\n- Portocaval lymph node measuring 40 x 27 mm.\n- Splenic lesion measuring 45 x 36 mm.\n\nFOLLOW-UP 1:\n- Portocaval lymph node: 22 x 15 mm.\n- Right renal mass: 22 x 16 mm.\n- The splenic lesion now measures 39 x 31 mm.",
+  "stated": "CR"
+ },
+ {
+  "id": "random_32",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      14,
+      12
+     ],
+     [
+      15,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      36,
+      29
+     ],
+     [
+      48,
+      39
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      33
+     ],
+     [
+      54,
+      45
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      45,
+      37
+     ],
+     [
+      61,
+      50
+     ]
+    ]
+   },
+   {
+    "name": "small right pleural effusion",
+    "organ": "pleura",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Splenic lesion measuring 45 x 37 mm.\n- Small right pleural effusion, not measurable.\n- Right renal mass measuring 40 x 33 mm.\n- Segment 4 liver lesion measuring 36 x 29 mm.\n- Right hilar lymph node measuring 14 x 12 mm.\n\nFOLLOW-UP 1:\n- Right hilar lymph node: 15 x 13 mm.\n- Small right pleural effusion persist, not measurable.\n- Splenic lesion: 61 x 50 mm.\n- The segment 4 liver lesion now measures 48 x 39 mm.\n- The right renal mass now measures 54 x 45 mm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_33",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      44,
+      31
+     ],
+     [
+      33,
+      23
+     ],
+     [
+      19,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "pancreatic tail mass",
+    "organ": "pancreas",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      23,
+      9
+     ],
+     [
+      17,
+      7
+     ],
+     [
+      13,
+      5
+     ]
+    ]
+   },
+   {
+    "name": "left para-aortic lymph node",
+    "organ": "retroperitoneum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      37,
+      28
+     ],
+     [
+      28,
+      21
+     ],
+     [
+      17,
+      13
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      14
+     ],
+     [
+      18,
+      9
+     ],
+     [
+      10,
+      5
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 8 liver lesion measuring 44 x 31 mm.\n- Pancreatic tail mass measuring 23 x 9 mm.\n- Segment 4 liver lesion measuring 28 x 14 mm.\n- Left para-aortic lymph node measuring 37 x 28 mm.\n\nFOLLOW-UP 1:\n- The segment 4 liver lesion now measures 18 x 9 mm.\n- Pancreatic tail mass: 17 x 7 mm.\n- Left para-aortic lymph node: 28 x 21 mm.\n- The segment 8 liver lesion now measures 33 x 23 mm.\n\nFOLLOW-UP 2:\n- The segment 8 liver lesion now measures 19 x 13 mm.\n- The left para-aortic lymph node now measures 17 x 13 mm.\n- Segment 4 liver lesion: 10 x 5 mm.\n- Pancreatic tail mass: 13 x 5 mm.",
+  "stated": "CR"
+ },
+ {
+  "id": "random_34",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      38,
+      26
+     ],
+     [
+      20,
+      14
+     ],
+     [
+      22,
+      15
+     ],
+     [
+      32,
+      22
+     ]
+    ]
+   },
+   {
+    "name": "left adrenal mass",
+    "organ": "adrenal",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      23,
+      14
+     ],
+     [
+      17,
+      10
+     ],
+     [
+      24,
+      15
+     ],
+     [
+      31,
+      19
+     ]
+    ]
+   },
+   {
+    "name": "splenic lesion",
+    "organ": "spleen",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      22
+     ],
+     [
+      17,
+      16
+     ],
+     [
+      19,
+      17
+     ],
+     [
+      26,
+      24
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      43,
+      34
+     ],
+     [
+      26,
+      21
+     ],
+     [
+      37,
+      29
+     ],
+     [
+      42,
+      33
+     ]
+    ]
+   },
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      38,
+      27
+     ],
+     [
+      28,
+      20
+     ],
+     [
+      36,
+      26
+     ],
+     [
+      44,
+      31
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      24,
+      16
+     ],
+     [
+      18,
+      12
+     ],
+     [
+      20,
+      13
+     ],
+     [
+      27,
+      18
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 6 liver lesion measuring 38 x 27 mm.\n- Segment 4 liver lesion measuring 43 x 34 mm.\n- Left axillary lymph node measuring 24 x 16 mm.\n- Left adrenal mass measuring 23 x 14 mm.\n- Splenic lesion measuring 24 x 22 mm.\n- Subcarinal lymph node measuring 38 x 26 mm.\n\nFOLLOW-UP 1:\n- Subcarinal lymph node: 20 x 14 mm.\n- Segment 6 liver lesion: 28 x 20 mm.\n- Splenic lesion: 17 x 16 mm.\n- Left adrenal mass: 17 x 10 mm.\n- The segment 4 liver lesion now measures 26 x 21 mm.\n- The left axillary lymph node now measures 18 x 12 mm.\n\nFOLLOW-UP 2:\n- The left axillary lymph node now measures 20 x 13 mm.\n- Splenic lesion: 19 x 17 mm.\n- Subcarinal lymph node: 22 x 15 mm.\n- Segment 6 liver lesion: 36 x 26 mm.\n- Segment 4 liver lesion: 37 x 29 mm.\n- Left adrenal mass: 24 x 15 mm.\n\nFOLLOW-UP 3:\n- The left adrenal mass now measures 31 x 19 mm.\n- Splenic lesion: 26 x 24 mm.\n- The subcarinal lymph node now measures 32 x 22 mm.\n- The segment 6 liver lesion now measures 44 x 31 mm.\n- Segment 4 liver lesion: 42 x 33 mm.\n- The left axillary lymph node now measures 27 x 18 mm.",
+  "stated": "PD"
+ },
+ {
+  "id": "random_35",
+  "kind": "random",
+  "expected": "CR",
+  "lesions": [
+   {
+    "name": "right hilar lymph node",
+    "organ": "hilum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      28,
+      17
+     ],
+     [
+      16,
+      10
+     ],
+     [
+      9,
+      5
+     ],
+     [
+      5,
+      3
+     ]
+    ]
+   },
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      31,
+      24
+     ],
+     [
+      22,
+      17
+     ],
+     [
+      18,
+      14
+     ],
+     [
+      11,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      18,
+      11
+     ],
+     [
+      14,
+      9
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      7,
+      4
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 3,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right hilar lymph node measuring 28 x 17 mm.\n- Subcarinal lymph node measuring 18 x 11 mm.\n- Portocaval lymph node measuring 31 x 24 mm.\n\nFOLLOW-UP 1:\n- The right hilar lymph node now measures 16 x 10 mm.\n- The subcarinal lymph node now measures 14 x 9 mm.\n- The portocaval lymph node now measures 22 x 17 mm.\n\nFOLLOW-UP 2:\n- The portocaval lymph node now measures 18 x 14 mm.\n- Subcarinal lymph node: 10 x 6 mm.\n- Right hilar lymph node: 9 x 5 mm.\n\nFOLLOW-UP 3:\n- Portocaval lymph node: 11 x 9 mm.\n- The right hilar lymph node now measures 5 x 3 mm.\n- The subcarinal lymph node now measures 7 x 4 mm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_36",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      23,
+      20
+     ],
+     [
+      13,
+      11
+     ]
+    ]
+   },
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      37
+     ],
+     [
+      34,
+      31
+     ]
+    ]
+   },
+   {
+    "name": "right lower lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      17,
+      11
+     ],
+     [
+      11,
+      7
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      46,
+      38
+     ],
+     [
+      28,
+      23
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right upper lobe nodule measuring 46 x 38 mm.\n- Left axillary lymph node measuring 23 x 20 mm.\n- Right lower lobe nodule measuring 17 x 11 mm.\n- Segment 6 liver lesion measuring 40 x 37 mm.\n\nFOLLOW-UP 1:\n- Right lower lobe nodule: 11 x 7 mm.\n- Segment 6 liver lesion: 34 x 31 mm.\n- The right upper lobe nodule now measures 28 x 23 mm.\n- The left axillary lymph node now measures 13 x 11 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_37",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      15,
+      9
+     ],
+     [
+      12,
+      7
+     ],
+     [
+      7,
+      4
+     ]
+    ]
+   },
+   {
+    "name": "right renal mass",
+    "organ": "kidney",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      36,
+      25
+     ],
+     [
+      27,
+      19
+     ],
+     [
+      16,
+      11
+     ]
+    ]
+   },
+   {
+    "name": "peritoneal thickening",
+    "organ": "peritoneum",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right renal mass measuring 36 x 25 mm.\n- Peritoneal thickening, not measurable.\n- Portocaval lymph node measuring 15 x 9 mm.\n\nFOLLOW-UP 1:\n- Portocaval lymph node: 12 x 7 mm.\n- Peritoneal thickening persist, not measurable.\n- Right renal mass: 27 x 19 mm.\n\nFOLLOW-UP 2:\n- The right renal mass now measures 16 x 11 mm.\n- Portocaval lymph node: 7 x 4 mm.\n- Peritoneal thickening persist, not measurable.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_38",
+  "kind": "random",
+  "expected": "SD",
+  "lesions": [
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      21,
+      10
+     ],
+     [
+      18,
+      9
+     ]
+    ]
+   },
+   {
+    "name": "left axillary lymph node",
+    "organ": "axilla",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      19,
+      11
+     ],
+     [
+      16,
+      9
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Segment 8 liver lesion measuring 2.1 x 1.0 cm.\n- Left axillary lymph node measuring 1.9 x 1.1 cm.\n\nFOLLOW-UP 1:\n- Segment 8 liver lesion: 1.8 x 0.9 cm.\n- Left axillary lymph node: 1.6 x 0.9 cm.",
+  "stated": "SD"
+ },
+ {
+  "id": "random_39",
+  "kind": "random",
+  "expected": "PR",
+  "lesions": [
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      44,
+      34
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "subcarinal lymph node",
+    "organ": "mediastinum",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      19,
+      15
+     ],
+     [
+      10,
+      8
+     ]
+    ]
+   },
+   {
+    "name": "segment 6 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      40,
+      37
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "segment 8 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      21,
+      9
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   {
+    "name": "small right pleural effusion",
+    "organ": "pleura",
+    "nodal": false,
+    "measurable": false,
+    "sizes": [
+     "present",
+     "present"
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 1,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Small right pleural effusion, not measurable.\n- Segment 8 liver lesion measuring 21 x 9 mm.\n- Right upper lobe nodule measuring 44 x 34 mm.\n- Segment 6 liver lesion measuring 40 x 37 mm.\n- Subcarinal lymph node measuring 19 x 15 mm.\n\nFOLLOW-UP 1:\n- The segment 8 liver lesion is no longer visible.\n- Small right pleural effusion persist, not measurable.\n- The segment 6 liver lesion is no longer visible.\n- The right upper lobe nodule is no longer visible.\n- Subcarinal lymph node: 10 x 8 mm.",
+  "stated": "PR"
+ },
+ {
+  "id": "random_40",
+  "kind": "random",
+  "expected": "PD",
+  "lesions": [
+   {
+    "name": "portocaval lymph node",
+    "organ": "abdomen",
+    "nodal": true,
+    "measurable": true,
+    "sizes": [
+     [
+      25,
+      17
+     ],
+     [
+      33,
+      22
+     ],
+     [
+      38,
+      26
+     ]
+    ]
+   },
+   {
+    "name": "right upper lobe nodule",
+    "organ": "lung",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      20,
+      6
+     ],
+     [
+      22,
+      7
+     ],
+     [
+      24,
+      7
+     ]
+    ]
+   },
+   {
+    "name": "segment 4 liver lesion",
+    "organ": "liver",
+    "nodal": false,
+    "measurable": true,
+    "sizes": [
+     [
+      33,
+      20
+     ],
+     [
+      44,
+      27
+     ],
+     [
+      49,
+      30
+     ]
+    ]
+   }
+  ],
+  "nontarget_pd": false,
+  "exam": 2,
+  "report": "CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST. Serial exams for one patient, findings only.\n\nBASELINE:\n- Right upper lobe nodule measuring 2.0 x 0.6 cm.\n- Segment 4 liver lesion measuring 3.3 x 2.0 cm.\n- Portocaval lymph node measuring 2.5 x 1.7 cm.\n\nFOLLOW-UP 1:\n- The portocaval lymph node now measures 3.3 x 2.2 cm.\n- Segment 4 liver lesion: 4.4 x 2.7 cm.\n- Right upper lobe nodule: 2.2 x 0.7 cm.\n\nFOLLOW-UP 2:\n- Segment 4 liver lesion: 4.9 x 3.0 cm.\n- Portocaval lymph node: 3.8 x 2.6 cm.\n- The right upper lobe nodule now measures 2.4 x 0.7 cm.",
+  "stated": "SD"
+ }
+]
