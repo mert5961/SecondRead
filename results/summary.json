@@ -1,0 +1,108 @@
+{
+ "oracle": "60/60 (100%)",
+ "models": [
+  {
+   "model": "qwen2.5:7b-instruct",
+   "alone": {
+    "all": "37/60 (62%)",
+    "edge": "12/20 (60%)",
+    "random": "25/40 (62%)",
+    "failed_edge_cases": [
+     "node_15mm_is_target",
+     "three_liver_lesions_two_targets",
+     "plus_19_percent_is_sd",
+     "plus_20_percent_but_4mm_is_sd",
+     "plus_25_percent_and_5mm_is_pd",
+     "pd_from_nadir_not_baseline",
+     "cr_with_residual_8mm_node",
+     "node_long_axis_trap"
+    ],
+    "confusion": {
+     "PR->SD": 8,
+     "SD->PD": 5,
+     "PD->SD": 2,
+     "CR->PR": 3,
+     "PR->CR": 2,
+     "CR->SD": 1,
+     "PR->PD": 1,
+     "SD->PR": 1
+    }
+   },
+   "extract": {
+    "all": "57/60 (95%)",
+    "edge": "19/20 (95%)",
+    "random": "38/40 (95%)",
+    "failed_edge_cases": [
+     "plus_25_percent_and_5mm_is_pd"
+    ],
+    "confusion": {
+     "PD->SD": 1,
+     "PR->SD": 1,
+     "PD->PR": 1
+    }
+   },
+   "extraction_errors": {
+    "wrong_size": 33,
+    "missed_or_renamed_lesion": 17,
+    "measurable_flag": 1,
+    "extra_lesion": 1
+   },
+   "clean_extractions": "34/60 (57%)",
+   "second_read": {
+    "wrong_impressions": 17,
+    "flagged": 18,
+    "recall": "16/17 (94%)",
+    "precision": "16/18 (89%)"
+   }
+  },
+  {
+   "model": "qwen3.8:27b",
+   "alone": {
+    "all": "44/60 (73%)",
+    "edge": "8/20 (40%)",
+    "random": "36/40 (90%)",
+    "failed_edge_cases": [
+     "node_15mm_is_target",
+     "three_liver_lesions_two_targets",
+     "plus_19_percent_is_sd",
+     "plus_25_percent_and_5mm_is_pd",
+     "pd_from_nadir_not_baseline",
+     "pr_held_after_small_regrowth",
+     "cr_with_residual_8mm_node",
+     "target_cr_non_target_persists",
+     "node_long_axis_trap",
+     "three_nodes_two_targets",
+     "sub_centimetre_lesion_is_non_target",
+     "minus_29_percent_is_sd"
+    ],
+    "confusion": {
+     "PR->SD": 6,
+     "SD->PD": 1,
+     "PD->SD": 2,
+     "CR->PR": 2,
+     "PR->CR": 2,
+     "SD->PR": 1,
+     "CR->SD": 1,
+     "PR->PD": 1
+    }
+   },
+   "extract": {
+    "all": "59/60 (98%)",
+    "edge": "20/20 (100%)",
+    "random": "39/40 (98%)",
+    "failed_edge_cases": [],
+    "confusion": {
+     "PR->PD": 1
+    }
+   },
+   "extraction_errors": {},
+   "clean_extractions": "60/60 (100%)",
+   "second_read": {
+    "wrong_impressions": 17,
+    "flagged": 18,
+    "recall": "17/17 (100%)",
+    "precision": "17/18 (94%)"
+   }
+  }
+ ]
+}

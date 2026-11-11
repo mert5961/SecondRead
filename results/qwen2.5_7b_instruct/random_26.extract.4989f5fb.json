@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Portocaval lymph node\", \"organ\": \"Lymph node\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 19, \"short_mm\": 8}, {\"exam\": 1, \"long_mm\": 14, \"short_mm\": 6}]},\n  {\"name\": \"Right hilar lymph node\", \"organ\": \"Lymph node\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 39, \"short_mm\": 27}, {\"exam\": 1, \"long_mm\": 28, \"short_mm\": 19}]}\n]}",
+ "seconds": 2.9
+}

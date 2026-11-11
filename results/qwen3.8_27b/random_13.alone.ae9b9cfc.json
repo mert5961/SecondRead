@@ -1,0 +1,4 @@
+{
+ "raw": "{\n\"response\": \"SD\",\n\"reason\": \"The sum of target lesion diameters (short axis) decreased from a baseline of 40 mm to 16 mm at Follow-up 1 and 11 mm at Follow-up 2, but increased to 13 mm at Follow-up 3, which is a 20% increase from the nadir (11 mm) but fails the required >= 5 mm absolute increase (13 - 11 = 2 mm), and does not meet the >= 30% decrease from baseline (13/40 = 67.5% remaining) for PR.\"\n}",
+ "seconds": 8.5
+}

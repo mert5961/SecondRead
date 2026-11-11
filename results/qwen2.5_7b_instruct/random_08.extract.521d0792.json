@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Left lower lobe mass\", \"organ\": \"Lung\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 44, \"short_mm\": 34}, {\"exam\": 1, \"long_mm\": 35, \"short_mm\": 27}]},\n  {\"name\": \"Segment 8 liver lesion\", \"organ\": \"Liver\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 22, \"short_mm\": 17}, {\"exam\": 1, \"long_mm\": 19, \"short_mm\": 15}]},\n  {\"name\": \"Sclerotic bone lesions\", \"organ\": \"Bone\", \"is_lymph_node\": false, \"measurable\": false, \"sizes\": [{\"exam\": 0, \"present\": true}, {\"exam\": 1, \"present\": true}]},\n  {\"name\": \"Sclerotic bone lesions\", \"organ\": \"Bone\", \"is_lymph_node\": false, \"measurable\": false, \"sizes\": [{\"exam\": 0, \"present\": true}, {\"exam\": 1, \"present\": true}]}\n]}",
+ "seconds": 7.3
+}

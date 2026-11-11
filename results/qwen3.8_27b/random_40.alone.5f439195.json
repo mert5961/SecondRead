@@ -1,0 +1,4 @@
+{
+ "raw": "{\n\"response\": \"PD\",\n\"reason\": \"The sum of target lesion diameters increased from a baseline of 7.8 cm (2.0 + 3.3 + 1.7) to 9.0 cm (2.4 + 4.9 + 2.6) at the last exam, representing a 15.4% increase which does not meet the >=20% threshold for PD, but wait, let me re-calculate: Baseline sum = 2.0 (RUL) + 3.3 (Liver) + 1.7 (Node) = 7.0 cm. Follow-up 1 sum = 2.2 + 4.4 + 2.2 = 8.8 cm. Follow-up 2 sum = 2.4 + 4.9 + 2.6 = 9.9 cm. The increase from baseline (7.0) to last exam (9.9) is 2.9 cm (41.4%), which is >= 20% and >= 5 mm, thus meeting PD criteria.\"\n}",
+ "seconds": 11.4
+}

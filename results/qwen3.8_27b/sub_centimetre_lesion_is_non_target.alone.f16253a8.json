@@ -1,0 +1,4 @@
+{
+ "raw": "{\"response\": \"SD\", \"reason\": \"The sum of target lesion diameters decreased from 40 mm to 28 mm (30% decrease), which meets the threshold for PR, but the presence of a non-target lesion (right upper lobe nodule) that increased in size (from 8 mm to 9 mm) does not constitute unequivocal progression, and since the sum decrease is exactly 30%, it qualifies as PR; however, re-evaluating the rule 'Target CR with non-target lesions still present is PR overall' is not applicable here as targets are not CR. Wait, let's re-read the PR rule: 'PR: sum decreased >= 30% from baseline.' 40 to 28 is a 12 mm decrease. 12/40 = 30%. So it meets PR criteria. Is there any PD? No new lesions. Unequivocal progression of non-target? The RUL nodule went from 8mm to 9mm. This is a slight increase, not unequivocal progression. So it is PR.\"}",
+ "seconds": 11.5
+}

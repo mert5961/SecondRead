@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Right upper lobe nodule\", \"organ\": \"Lung\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 20, \"short_mm\": 15}, {\"exam\": 1, \"long_mm\": 16, \"short_mm\": 12}]},\n  {\"name\": \"Right hilar lymph node\", \"organ\": \"Hilum\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 25, \"short_mm\": 15}, {\"exam\": 1, \"long_mm\": 24, \"short_mm\": 8}]}\n]}",
+ "seconds": 4.4
+}

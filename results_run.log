@@ -1,1 +1,19 @@
-qwen2.5:7b-instruct 1/60
+qwen2.5:7b-instruct 1/60qwen2.5:7b-instruct 2/60qwen2.5:7b-instruct 3/60qwen2.5:7b-instruct 4/60qwen2.5:7b-instruct 5/60qwen2.5:7b-instruct 6/60qwen2.5:7b-instruct 7/60qwen2.5:7b-instruct 8/60qwen2.5:7b-instruct 9/60qwen2.5:7b-instruct 10/60qwen2.5:7b-instruct 11/60qwen2.5:7b-instruct 12/60qwen2.5:7b-instruct 13/60qwen2.5:7b-instruct 14/60qwen2.5:7b-instruct 15/60qwen2.5:7b-instruct 16/60qwen2.5:7b-instruct 17/60qwen2.5:7b-instruct 18/60qwen2.5:7b-instruct 19/60qwen2.5:7b-instruct 20/60qwen2.5:7b-instruct 21/60qwen2.5:7b-instruct 22/60qwen2.5:7b-instruct 23/60qwen2.5:7b-instruct 24/60qwen2.5:7b-instruct 25/60qwen2.5:7b-instruct 26/60qwen2.5:7b-instruct 27/60qwen2.5:7b-instruct 28/60qwen2.5:7b-instruct 29/60qwen2.5:7b-instruct 30/60qwen2.5:7b-instruct 31/60qwen2.5:7b-instruct 32/60qwen2.5:7b-instruct 33/60qwen2.5:7b-instruct 34/60qwen2.5:7b-instruct 35/60qwen2.5:7b-instruct 36/60qwen2.5:7b-instruct 37/60qwen2.5:7b-instruct 38/60qwen2.5:7b-instruct 39/60qwen2.5:7b-instruct 40/60qwen2.5:7b-instruct 41/60qwen2.5:7b-instruct 42/60qwen2.5:7b-instruct 43/60qwen2.5:7b-instruct 44/60qwen2.5:7b-instruct 45/60qwen2.5:7b-instruct 46/60qwen2.5:7b-instruct 47/60qwen2.5:7b-instruct 48/60qwen2.5:7b-instruct 49/60qwen2.5:7b-instruct 50/60qwen2.5:7b-instruct 51/60qwen2.5:7b-instruct 52/60qwen2.5:7b-instruct 53/60qwen2.5:7b-instruct 54/60qwen2.5:7b-instruct 55/60qwen2.5:7b-instruct 56/60qwen2.5:7b-instruct 57/60qwen2.5:7b-instruct 58/60qwen2.5:7b-instruct 59/60qwen2.5:7b-instruct 60/60
+qwen3.8:27b 1/60qwen3.8:27b 2/60qwen3.8:27b 3/60qwen3.8:27b 4/60qwen3.8:27b 5/60qwen3.8:27b 6/60qwen3.8:27b 7/60qwen3.8:27b 8/60qwen3.8:27b 9/60qwen3.8:27b 10/60qwen3.8:27b 11/60qwen3.8:27b 12/60qwen3.8:27b 13/60qwen3.8:27b 14/60qwen3.8:27b 15/60qwen3.8:27b 16/60qwen3.8:27b 17/60qwen3.8:27b 18/60qwen3.8:27b 19/60qwen3.8:27b 20/60qwen3.8:27b 21/60qwen3.8:27b 22/60qwen3.8:27b 23/60qwen3.8:27b 24/60qwen3.8:27b 25/60qwen3.8:27b 26/60qwen3.8:27b 27/60qwen3.8:27b 28/60qwen3.8:27b 29/60qwen3.8:27b 30/60qwen3.8:27b 31/60qwen3.8:27b 32/60qwen3.8:27b 33/60qwen3.8:27b 34/60qwen3.8:27b 35/60qwen3.8:27b 36/60qwen3.8:27b 37/60qwen3.8:27b 38/60qwen3.8:27b 39/60qwen3.8:27b 40/60qwen3.8:27b 41/60qwen3.8:27b 42/60qwen3.8:27b 43/60qwen3.8:27b 44/60qwen3.8:27b 45/60qwen3.8:27b 46/60qwen3.8:27b 47/60qwen3.8:27b 48/60qwen3.8:27b 49/60qwen3.8:27b 50/60qwen3.8:27b 51/60qwen3.8:27b 52/60qwen3.8:27b 53/60qwen3.8:27b 54/60qwen3.8:27b 55/60qwen3.8:27b 56/60qwen3.8:27b 57/60qwen3.8:27b 58/60qwen3.8:27b 59/60qwen3.8:27b 60/60
+Oracle (truth -> recist.py): 60/60 (100%)
+
+== qwen2.5:7b-instruct
+A. LLM alone            all 37/60 (62%) | edge 12/20 (60%) | random 25/40 (62%)
+B. LLM extracts + code  all 57/60 (95%) | edge 19/20 (95%) | random 38/40 (95%)
+   clean extractions 34/60 (57%), errors {'wrong_size': 33, 'missed_or_renamed_lesion': 17, 'measurable_flag': 1, 'extra_lesion': 1}
+   A fails edge cases: node_15mm_is_target, three_liver_lesions_two_targets, plus_19_percent_is_sd, plus_20_percent_but_4mm_is_sd, plus_25_percent_and_5mm_is_pd, pd_from_nadir_not_baseline, cr_with_residual_8mm_node, node_long_axis_trap
+   B fails edge cases: plus_25_percent_and_5mm_is_pd
+   second read: {'wrong_impressions': 17, 'flagged': 18, 'recall': '16/17 (94%)', 'precision': '16/18 (89%)'}
+
+== qwen3.8:27b
+A. LLM alone            all 44/60 (73%) | edge 8/20 (40%) | random 36/40 (90%)
+B. LLM extracts + code  all 59/60 (98%) | edge 20/20 (100%) | random 39/40 (98%)
+   clean extractions 60/60 (100%), errors {}
+   A fails edge cases: node_15mm_is_target, three_liver_lesions_two_targets, plus_19_percent_is_sd, plus_25_percent_and_5mm_is_pd, pd_from_nadir_not_baseline, pr_held_after_small_regrowth, cr_with_residual_8mm_node, target_cr_non_target_persists, node_long_axis_trap, three_nodes_two_targets, sub_centimetre_lesion_is_non_target, minus_29_percent_is_sd
+   B fails edge cases: 
+   second read: {'wrong_impressions': 17, 'flagged': 18, 'recall': '17/17 (100%)', 'precision': '17/18 (94%)'}

@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Splenic lesion\", \"organ\": \"Spleen\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 40, \"short_mm\": 30}, {\"exam\": 1, \"long_mm\": 32, \"short_mm\": 26}]},\n  {\"name\": \"Left axillary lymph node\", \"organ\": \"Axilla\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 22, \"short_mm\": 16}, {\"exam\": 1, \"long_mm\": 22, \"short_mm\": 16}]},\n  {\"name\": \"Right renal mass\", \"organ\": \"Kidney\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 27, \"short_mm\": 18}, {\"exam\": 1, \"long_mm\": 14, \"short_mm\": 9}]},\n  {\"name\": \"Portocaval lymph node\", \"organ\": \"Pelvis\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 25, \"short_mm\": 12}, {\"exam\": 1, \"long_mm\": 14, \"short_mm\": 7}]}\n]}",
+ "seconds": 6.2
+}

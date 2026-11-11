@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Right renal mass\", \"organ\": \"Kidney\", \"is_lymph_node\": false, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 36, \"short_mm\": 25}, {\"exam\": 1, \"long_mm\": 27, \"short_mm\": 19}, {\"exam\": 2, \"long_mm\": 16, \"short_mm\": 11}]},\n  {\"name\": \"Peritoneal thickening\", \"organ\": \"Peritoneum\", \"is_lymph_node\": false, \"measurable\": false,\n   \"sizes\": [{\"exam\": 0, \"present\": true}, {\"exam\": 1, \"present\": true}, {\"exam\": 2, \"present\": true}]},\n  {\"name\": \"Portocaval lymph node\", \"organ\": \"Lymph Node\", \"is_lymph_node\": true, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 15, \"short_mm\": 9}, {\"exam\": 1, \"long_mm\": 12, \"short_mm\": 7}, {\"exam\": 2, \"long_mm\": 7, \"short_mm\": 4}]}\n]}",
+ "seconds": 7.4
+}

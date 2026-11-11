@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Right renal mass\", \"organ\": \"Kidney\", \"is_lymph_node\": false, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 33, \"short_mm\": 24}, {\"exam\": 1, \"long_mm\": 22, \"short_mm\": 16}]},\n  {\"name\": \"Portocaval lymph node\", \"organ\": \"Lymph Node\", \"is_lymph_node\": true, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 40, \"short_mm\": 27}, {\"exam\": 1, \"long_mm\": 22, \"short_mm\": 15}]},\n  {\"name\": \"Splenic lesion\", \"organ\": \"Spleen\", \"is_lymph_node\": false, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 45, \"short_mm\": 36}, {\"exam\": 1, \"long_mm\": 39, \"short_mm\": 31}]}\n]}",
+ "seconds": 4.2
+}

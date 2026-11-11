@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Subcarinal lymph node\", \"organ\": \"Lymph node\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 28, \"short_mm\": 20}, {\"exam\": 1, \"long_mm\": 32, \"short_mm\": 23}]},\n  {\"name\": \"Left axillary lymph node\", \"organ\": \"Lymph node\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 29, \"short_mm\": 23}, {\"exam\": 1, \"long_mm\": 37, \"short_mm\": 29}]}\n]}",
+ "seconds": 4.2
+}

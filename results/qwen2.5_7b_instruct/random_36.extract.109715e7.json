@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Right upper lobe nodule\", \"organ\": \"lung\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 46, \"short_mm\": 38}, {\"exam\": 1, \"long_mm\": 28, \"short_mm\": 23}]},\n  {\"name\": \"Left axillary lymph node\", \"organ\": \"axilla\", \"is_lymph_node\": true, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 23, \"short_mm\": 20}, {\"exam\": 1, \"long_mm\": 13, \"short_mm\": 11}]},\n  {\"name\": \"Right lower lobe nodule\", \"organ\": \"lung\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 17, \"short_mm\": 11}, {\"exam\": 1, \"long_mm\": 11, \"short_mm\": 7}]},\n  {\"name\": \"Segment 6 liver lesion\", \"organ\": \"liver\", \"is_lymph_node\": false, \"measurable\": true, \"sizes\": [{\"exam\": 0, \"long_mm\": 40, \"short_mm\": 37}, {\"exam\": 1, \"long_mm\": 34, \"short_mm\": 31}]}\n]}",
+ "seconds": 8.7
+}

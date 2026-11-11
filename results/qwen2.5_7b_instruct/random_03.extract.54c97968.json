@@ -1,0 +1,4 @@
+{
+ "raw": "{\"lesions\": [\n  {\"name\": \"Segment 4 liver lesion\", \"organ\": \"Liver\", \"is_lymph_node\": false, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 22, \"short_mm\": 20}, {\"exam\": 1, \"long_mm\": 16, \"short_mm\": 15}]},\n  {\"name\": \"Segment 8 liver lesion\", \"organ\": \"Liver\", \"is_lymph_node\": false, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 42, \"short_mm\": 32}, {\"exam\": 1, \"long_mm\": 29, \"short_mm\": 22}]},\n  {\"name\": \"Left axillary lymph node\", \"organ\": \"Axilla\", \"is_lymph_node\": true, \"measurable\": true,\n   \"sizes\": [{\"exam\": 0, \"long_mm\": 35, \"short_mm\": 24}, {\"exam\": 1, \"long_mm\": 27, \"short_mm\": 19}]}\n],\n \"nontarget_unequivocal_progression\": false}",
+ "seconds": 7.3
+}

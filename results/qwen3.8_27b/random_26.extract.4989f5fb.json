@@ -1,0 +1,4 @@
+{
+ "raw": "{\n  \"lesions\": [\n    {\n      \"name\": \"Portocaval lymph node\",\n      \"organ\": \"Lymph node\",\n      \"is_lymph_node\": true,\n      \"measurable\": true,\n      \"sizes\": [\n        {\n          \"exam\": 0,\n          \"long_mm\": 19,\n          \"short_mm\": 8\n        },\n        {\n          \"exam\": 1,\n          \"long_mm\": 14,\n          \"short_mm\": 6\n        }\n      ]\n    },\n    {\n      \"name\": \"Right hilar lymph node\",\n      \"organ\": \"Lymph node\",\n      \"is_lymph_node\": true,\n      \"measurable\": true,\n      \"sizes\": [\n        {\n          \"exam\": 0,\n          \"long_mm\": 39,\n          \"short_mm\": 27\n        },\n        {\n          \"exam\": 1,\n          \"long_mm\": 28,\n          \"short_mm\": 19\n        }\n      ]\n    }\n  ],\n  \"nontarget_unequivocal_progression\": false\n}",
+ "seconds": 10.0
+}
