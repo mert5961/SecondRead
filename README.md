@@ -17,6 +17,24 @@ Plain, tested code applies the rules and **shows its working**, so a reader can 
   <img alt="Right answers on 20 tricky cases. Large model: 8 alone, 20 with code. Small model: 12 alone, 19 with code." src="figures/edge-cases-light.svg">
 </picture>
 
+## From a real scan to a verdict
+
+The rule engine needs measurements. On a public lung CT (RIDER, TCIA), `measure.py` reads an expert's tumor
+outline and measures it the RECIST way; `recist.py` then gives the verdict with its working.
+This patient was scanned **twice, minutes apart**, so nothing really changed:
+
+![The same lung tumor on two scans taken minutes apart, measured at 69.1 mm and 60.8 mm](figures/repeat-scan.png)
+
+| Outline | Scan 1 | Scan 2 | Change | Verdict from `recist.py` |
+|---|---|---|---|---|
+| Drawn by hand | 69.1 mm | 60.8 mm | **-12%** | Stable disease |
+| Automatic | 59.4 mm | 60.6 mm | +2% | Stable disease |
+
+The verdict is right both times. But the hand-drawn outlines alone moved the number by 12%, more than half
+of the 20% that would be called progression. The arithmetic is the easy part to make reliable; the measurement
+going in is where the noise lives. One patient, so this is an illustration, not a statistic.
+Data source and licence: [`DATA.md`](DATA.md).
+
 **It also works as a second reader.** 17 reports carry a deliberately wrong conclusion. With the large model,
 SecondRead flagged all 17, with one false alarm.
 
@@ -73,13 +91,17 @@ In a real pipeline the sizes would come from an imaging model, not report text. 
 | `make_cases.py` / `test_cases.py` | Synthetic patients, report text, gold labels |
 | `run_eval.py` | Both pipelines, extraction error tags, second-reader check |
 | `make_figures.py` | The two figures above, drawn from the saved results |
+| `measure.py` / `repeat_scan.py` | CT + expert outline → longest diameter, short axis, volume → `recist.py` (needs pydicom, numpy, pillow) |
 </details>
 
 <details>
 <summary><b>Limits</b></summary>
 
 - Synthetic, template-style reports; real reports are messier. 60 cases is a small set.
-- Text in, not images. No clinical validation, no reader study.
+- The report eval is text only. The image step covers one public patient and measures from an existing expert
+  outline; it does not find or outline tumors itself. No clinical validation, no reader study.
+- `measure.py` takes the longest distance between two outline points in one slice; on a concave tumor that
+  line can cross tissue outside the outline, which a human reader would avoid.
 - Assumptions to confirm against the RECIST 1.1 paper: lymph nodes count as one organ for the 2-per-organ limit;
   ties between equal lesions are broken by name.
 - Reference: Eisenhauer et al., *New response evaluation criteria in solid tumours: revised RECIST guideline
