@@ -1,6 +1,7 @@
 # SecondRead
 
-**Let the AI read. Let code decide.** Tumor response (RECIST 1.1) from serial CT reports, tested on 60 cases.
+**Let the AI read. Let code decide.** Tumor response (RECIST 1.1) from serial CT reports, tested on 60 cases,
+plus a working image step: a public lung CT and its tumor outline in, a measurement and a verdict out, in 3D.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/hero-dark.svg">
@@ -19,7 +20,7 @@ Plain, tested code applies the rules and **shows its working**, so a reader can 
 
 ## From a real scan to a verdict
 
-The rule engine needs measurements. On a public lung CT (RIDER, TCIA), `measure.py` reads an expert's tumor
+The rule engine needs measurements. On a public lung CT (RIDER, TCIA), `measure.py` reads a published tumor
 outline and measures it the RECIST way; `recist.py` then gives the verdict with its working.
 This patient was scanned **twice, minutes apart**, so nothing really changed:
 
@@ -36,7 +37,7 @@ going in is where the noise lives. One patient, so this is an illustration, not 
 Data source and licence: [`DATA.md`](DATA.md).
 
 **In 3D:** the same tumor from both scans, inside the lungs, rotatable in the browser
-([open the viewer](https://mert5961.github.io/SecondRead/)).
+([open the viewer](https://mert5961.github.io/SecondRead/), or run it locally: `cd docs && python3 -m http.server`).
 
 [![3D view of the tumor from both scans side by side](figures/3d-side.jpg)](https://mert5961.github.io/SecondRead/)
 
@@ -105,7 +106,7 @@ In a real pipeline the sizes would come from an imaging model, not report text. 
 
 - Synthetic, template-style reports; real reports are messier. 60 cases is a small set.
 - The report eval is text only. The image step covers one public patient and measures from an existing expert
-  outline; it does not find or outline tumors itself. No clinical validation, no reader study.
+  outline; it does not find or outline tumors itself. In 3D the two tumors are centred on each other, not registered. No clinical validation, no reader study.
 - `measure.py` takes the longest distance between two outline points in one slice; on a concave tumor that
   line can cross tissue outside the outline, which a human reader would avoid.
 - Assumptions to confirm against the RECIST 1.1 paper: lymph nodes count as one organ for the 2-per-organ limit;
