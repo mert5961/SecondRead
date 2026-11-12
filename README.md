@@ -1,93 +1,103 @@
 # SecondRead
 
-**Let the LLM read. Let code decide.** A small study of RECIST 1.1 response assessment from serial CT reports.
+**Let the AI read. Let code decide.** Tumor response (RECIST 1.1) from serial CT reports, tested on 60 cases.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/hero-dark.svg">
+  <img alt="One case: the AI alone answers stable disease, which is wrong; SecondRead answers progressive disease and shows the numbers" src="figures/hero-light.svg">
+</picture>
+
+A language model with the RECIST rules in its prompt still slips on the arithmetic and the bookkeeping:
+the lowest earlier sum, +19% vs +20%, a lymph node's short axis, the 2-per-organ limit.
+So SecondRead splits the job. The model only copies the lesions and sizes out of the report.
+Plain, tested code applies the rules and **shows its working**, so a reader can check any answer in seconds.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/edge-cases-dark.svg">
+  <img alt="Right answers on 20 tricky cases. Large model: 8 alone, 20 with code. Small model: 12 alone, 19 with code." src="figures/edge-cases-light.svg">
+</picture>
+
+**It also works as a second reader.** 17 reports carry a deliberately wrong conclusion. With the large model,
+SecondRead flagged all 17, with one false alarm.
+
+## What I learned building it
+Built in Claude Code with Claude Fable 5.2 as the coding agent. I reviewed every step and logged every mistake
+in [`BUILD_LOG.md`](BUILD_LOG.md).
+
+- **A bad score can be my own prompt.** The small model first scored 55%. Its raw answers showed it listed one
+  lesion per report, copying my one-lesion example. A two-lesion example: 95%.
+- **When the extraction is perfect but the answer is "wrong", check the answer key.** That's how I found a bug in
+  my own test data.
+- **Some calls belong to a human.** The one case the large model still misses is a clinical judgement
+  (did a 10 mm node "unequivocally" progress?). Next step: accept that only when the report says it, else flag it.
 
 Inspired by Nucleo Research's public use case *"Target vs Non-Target Lesion Classification (RECIST)"*.
-An outside idea, built to learn; **not affiliated with Nucleo**. All 60 patients are synthetic. No patient data.
-Not a medical device and not clinically validated.
+An outside idea built to learn, **not affiliated with Nucleo**. All cases are synthetic, no patient data.
+Not a medical device.
 
-## The question
-If a language model has the RECIST 1.1 rules in its prompt, can it give the response category (CR / PR / SD / PD)
-by itself? Or should it only extract the measurements, and leave the decision to deterministic code that
-can show its work?
+<details>
+<summary><b>Full results</b> (60 cases: 20 hand-made edge cases + 40 random)</summary>
 
-```mermaid
-flowchart TD
-    R[Serial CT report text] --> A[A. LLM alone<br/>rules in the prompt]
-    A --> AR[CR / PR / SD / PD]
-    R --> X[B. LLM extracts lesions<br/>JSON: organ, node?, sizes per exam]
-    X --> V{Schema check}
-    V -->|invalid| N[INVALID, no guess]
-    V -->|ok| C[recist.py<br/>targets, sum, nadir, response]
-    C --> BR[CR / PR / SD / PD<br/>+ audit trail]
-    BR --> S{Second read:<br/>matches the report's<br/>stated impression?}
-    S -->|no| F[Flag for a reader]
-```
-
-In a real pipeline the measurements would come from an imaging model, not report text. `recist.py` is written to
-sit after either: it takes lesion sizes over time and returns the response **with the rule and numbers behind it**:
-
-```
-Segment 6 liver lesion: target, longest diameter 60 mm
-PD: sum 62 mm vs nadir 50 mm = +12 mm (+24.0%), needs >= +20% and >= +5 mm
-overall PD: target PD, non-target NA, no new lesions
-```
-
-## Results (run 2, 60 cases: 20 hand-made edge cases + 40 random)
-
-| Model (local, Ollama) | A. LLM alone | A on edge cases | B. LLM extracts, code decides | B on edge cases | Clean extractions |
+| Local model (Ollama) | AI alone | on edge cases | AI reads, code decides | on edge cases | Clean extractions |
 |---|---|---|---|---|---|
 | qwen3.8:27b | 44/60 (73%) | 8/20 | **59/60 (98%)** | **20/20** | 60/60 |
 | qwen2.5:7b-instruct | 37/60 (62%) | 12/20 | **57/60 (95%)** | **19/20** | 34/60 |
-| Oracle (true sizes → `recist.py`) | | | 60/60 | 20/20 | |
+| True sizes → `recist.py` | | | 60/60 | 20/20 | |
 
-**Second read.** 17 reports carry a deliberately wrong impression. Pipeline B with the 27B model flagged all 17,
-with 1 false alarm (7B: 16 of 17, 2 false alarms).
+Every raw model answer is saved: run 2 in `results/`, run 1 (before the prompt fix) in `results_v1/`.
+The edge cases and their hand-written labels are in [`make_cases.py`](make_cases.py).
+</details>
 
-Where the LLM alone fails, even the 27B model with the rules in front of it: +19% vs +20%, "+20% but only +4 mm",
-progression measured from the nadir instead of the baseline, short axis vs long axis for lymph nodes,
-the 2-per-organ limit, a residual 8 mm node in a complete response. Exactly the arithmetic and bookkeeping
-that code does reliably and a reviewer can audit.
+<details>
+<summary><b>How it works</b></summary>
 
-The 20 edge cases, their hand-written labels and the reasons are in [`make_cases.py`](make_cases.py);
-every raw model answer is kept in `results/` (run 2) and `results_v1/` (run 1).
+```mermaid
+flowchart TD
+    R[Serial CT report text] --> A[A. AI alone<br/>rules in the prompt]
+    A --> AR[CR / PR / SD / PD]
+    R --> X[B. AI extracts lesions<br/>JSON: organ, node?, sizes per exam]
+    X --> V{Schema check}
+    V -->|invalid| N[INVALID, no guess]
+    V -->|ok| C[recist.py<br/>targets, sum, lowest sum, response]
+    C --> BR[CR / PR / SD / PD<br/>+ the working]
+    BR --> S{Matches the report's<br/>own conclusion?}
+    S -->|no| F[Flag for a reader]
+```
 
-## How it was built: [`BUILD_LOG.md`](BUILD_LOG.md)
-Built in Claude Code with Claude Fable 5.2 as the coding agent; I reviewed every step. The build log records each
-time the work was wrong and what caught it. Three lessons:
+In a real pipeline the sizes would come from an imaging model, not report text. `recist.py` sits after either one.
 
-1. **A bad score can be my prompt.** In run 1 the 7B model scored 55% in pipeline B. Reading the raw outputs showed
-   it returned one lesion for 55 of 60 reports, because my JSON example had one lesion. With a two-lesion example:
-   95%. Read the outputs before believing a number.
-2. **A failure with a clean extraction means check the label first.** The 27B model's only run-1 "miss" was a
-   wrong gold label from my generator, not a model error.
-3. **Some calls belong to a reader.** The 27B model's one remaining miss: a non-target node regrew from 2 to
-   10 mm while every target vanished, and the model called it "unequivocal progression". That is a clinical
-   judgement; the next step is to accept that flag only when the report states it, and otherwise mark REVIEW.
+| File | What it does |
+|---|---|
+| `recist.py` | Target selection, sum of diameters, nadir, CR/PR/SD/PD, overall response, the working |
+| `test_recist.py` | One hand-made case per rule (33 tests) |
+| `make_cases.py` / `test_cases.py` | Synthetic patients, report text, gold labels |
+| `run_eval.py` | Both pipelines, extraction error tags, second-reader check |
+| `make_figures.py` | The two figures above, drawn from the saved results |
+</details>
 
-## Limits
+<details>
+<summary><b>Limits</b></summary>
+
 - Synthetic, template-style reports; real reports are messier. 60 cases is a small set.
 - Text in, not images. No clinical validation, no reader study.
 - Assumptions to confirm against the RECIST 1.1 paper: lymph nodes count as one organ for the 2-per-organ limit;
   ties between equal lesions are broken by name.
 - Reference: Eisenhauer et al., *New response evaluation criteria in solid tumours: revised RECIST guideline
   (version 1.1)*, Eur J Cancer 45 (2009) 228–247.
+</details>
 
-## Run it
-Python 3.9+, standard library only. [Ollama](https://ollama.com) for the LLM part.
+<details>
+<summary><b>Run it</b></summary>
+
+Python 3.9+, standard library only. [Ollama](https://ollama.com) for the model part.
 
 ```bash
-python3 -m unittest            # 33 tests: every RECIST rule has a hand-made case
-python3 make_cases.py          # writes cases.json (fixed seed)
+python3 -m unittest
+python3 make_cases.py
 ollama pull qwen2.5:7b-instruct
 python3 run_eval.py qwen2.5:7b-instruct   # add more model names to compare
+python3 make_figures.py
 ```
-
-| File | What it does |
-|---|---|
-| `recist.py` | Target selection, sum of diameters, nadir, CR/PR/SD/PD, overall response, audit trail |
-| `test_recist.py` | One hand-made case per rule |
-| `make_cases.py` / `test_cases.py` | Synthetic patients, report text, gold labels; checks the edge labels agree with the rules |
-| `run_eval.py` | Pipelines A and B, extraction error tags, second-read check, cached raw outputs |
+</details>
 
 Mert Barut · [mertbarut.me](https://mertbarut.me)
