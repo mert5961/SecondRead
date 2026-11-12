@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SecondRead 3D: one tumor, two scans</title>
+<style>
+  :root { --bg:#111110; --panel:#1c1c1a; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --line:#383835;
+          --s1:#3987e5; --s2:#d95926; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink);
+              font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  #view { position:fixed; left:0; top:0; width:100vw; height:100vh; display:block; }
+  .card { position:fixed; left:16px; top:16px; width:min(340px, calc(100vw - 32px)); background:rgba(28,28,26,.92);
+          border:1px solid var(--line); border-radius:12px; padding:16px 18px; backdrop-filter:blur(6px); }
+  h1 { font-size:18px; margin:0 0 4px; letter-spacing:-.01em; }
+  p { margin:0 0 12px; color:var(--ink2); font-size:13.5px; }
+  .row { display:flex; align-items:center; gap:10px; padding:7px 0; border-top:1px solid var(--line); cursor:pointer; }
+  .row input { width:16px; height:16px; accent-color:var(--ink2); margin:0; }
+  .sw { width:12px; height:12px; border-radius:3px; flex:none; }
+  .name { flex:1; }
+  .num { font-variant-numeric:tabular-nums; font-weight:650; }
+  .sub { color:var(--muted); font-size:12.5px; }
+  button { margin-top:12px; width:100%; padding:9px 12px; border-radius:8px; border:1px solid var(--line);
+           background:#2a2a27; color:var(--ink); font:inherit; font-weight:600; cursor:pointer; }
+  button:hover { background:#33332f; }
+  .foot { margin:12px 0 0; font-size:12px; color:var(--muted); }
+  .foot a { color:var(--ink2); }
+  .hint { position:fixed; right:16px; bottom:14px; color:var(--muted); font-size:12.5px; }
+  @media (max-width:560px){ .hint{ display:none; } .card{ padding:12px 14px; } p{ display:none; } }
+</style>
+</head>
+<body>
+<canvas id="view"></canvas>
+<div class="card">
+  <h1>One tumor, two scans, minutes apart</h1>
+  <p>Nothing changed between the scans. The two hand-drawn outlines still differ, and so does the measured diameter.</p>
+  <label class="row"><input type="checkbox" id="c1" checked><span class="sw" style="background:var(--s1)"></span>
+    <span class="name">Scan 1<br><span class="sub" id="m1"></span></span><span class="num" id="d1"></span></label>
+  <label class="row"><input type="checkbox" id="c2" checked><span class="sw" style="background:var(--s2)"></span>
+    <span class="name">Scan 2<br><span class="sub" id="m2"></span></span><span class="num" id="d2"></span></label>
+  <label class="row"><input type="checkbox" id="cl" checked><span class="sw" style="background:#6b6a66"></span>
+    <span class="name">Lungs (scan 1)</span></label>
+  <button id="mode">Compare side by side</button>
+  <div class="foot">Lines show the longest diameter in one slice (RECIST). The two tumors are centred on each other;
+    they are not registered. Public data: RIDER Lung CT, The Cancer Imaging Archive, CC BY 4.0.
+    Research illustration, not a medical device. <a href="https://github.com/mert5961/SecondRead">Code</a></div>
+</div>
+<div class="hint">drag to rotate · scroll to zoom · right-drag to pan</div>
+
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+               "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const canvas = document.getElementById('view');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x111110);
+const camera = new THREE.PerspectiveCamera(38, 1, 1, 5000);
+camera.position.set(190, 70, 400);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.autoRotate = true; controls.autoRotateSpeed = 0.6;
+canvas.addEventListener('pointerdown', () => controls.autoRotate = false);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x333330, 1.5));
+const sun = new THREE.DirectionalLight(0xffffff, 1.6); sun.position.set(1, 1.2, 1.5); scene.add(sun);
+
+function mesh(d, material) {
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(d.v, 3));
+  g.setIndex(d.f); g.computeVertexNormals();
+  return new THREE.Mesh(g, material);
+}
+function line(pts, color) {
+  const a = new THREE.Vector3(...pts.slice(0, 3)), b = new THREE.Vector3(...pts.slice(3));
+  const len = a.distanceTo(b);
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(0.9, 0.9, len, 12),
+                           new THREE.MeshBasicMaterial({ color, depthTest: false }));
+  m.position.copy(a).add(b).multiplyScalar(0.5);
+  m.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), b.clone().sub(a).normalize());
+  m.renderOrder = 5;
+  return m;
+}
+function resize() {
+  renderer.setSize(innerWidth, innerHeight, false);
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  // keep the tumor clear of the info card on wide screens
+  controls.target.set(innerWidth > 900 ? -30 : 0, 0, 0);
+}
+addEventListener('resize', resize); resize();
+
+const data = await (await fetch('data/scene.json')).json();
+const groups = {};
+for (const [key, color] of [['scan1', 0x3987e5], ['scan2', 0xd95926]]) {
+  const g = new THREE.Group();
+  g.add(mesh(data[key].tumor, new THREE.MeshStandardMaterial({ color, roughness: 0.55, transparent: true, opacity: 0.62,
+                                                              side: THREE.DoubleSide, depthWrite: false })));
+  g.add(line(data[key].line, key === 'scan1' ? 0xbfdcff : 0xffd2bd));
+  scene.add(g); groups[key] = g;
+  const n = key === 'scan1' ? 1 : 2;
+  document.getElementById('d' + n).textContent = data[key].long_mm.toFixed(1) + ' mm';
+  document.getElementById('m' + n).textContent = 'short axis ' + data[key].short_mm.toFixed(1) + ' mm · ' + data[key].volume_ml.toFixed(1) + ' ml';
+}
+groups.lungs = mesh(data.lungs, new THREE.MeshStandardMaterial({ color: 0x8a8984, roughness: 0.9, transparent: true,
+                                                               opacity: 0.13, side: THREE.DoubleSide, depthWrite: false }));
+scene.add(groups.lungs);
+for (const [id, key] of [['c1', 'scan1'], ['c2', 'scan2'], ['cl', 'lungs']])
+  document.getElementById(id).addEventListener('change', e => groups[key].visible = e.target.checked);
+
+let side = false;
+const modeBtn = document.getElementById('mode');
+modeBtn.addEventListener('click', () => {
+  side = !side;
+  groups.scan1.position.x = side ? -48 : 0;
+  groups.scan2.position.x = side ? 48 : 0;
+  groups.lungs.visible = !side && document.getElementById('cl').checked;
+  document.getElementById('cl').disabled = side;
+  camera.position.setLength(side ? 300 : 440);
+  modeBtn.textContent = side ? 'Show overlaid in the lungs' : 'Compare side by side';
+});
+if (location.hash === '#side') modeBtn.click();
+renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+</script>
+</body>
+</html>

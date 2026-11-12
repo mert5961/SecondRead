@@ -35,6 +35,11 @@ of the 20% that would be called progression. The arithmetic is the easy part to 
 going in is where the noise lives. One patient, so this is an illustration, not a statistic.
 Data source and licence: [`DATA.md`](DATA.md).
 
+**In 3D:** the same tumor from both scans, inside the lungs, rotatable in the browser
+([open the viewer](https://mert5961.github.io/SecondRead/)).
+
+[![3D view of the tumor from both scans side by side](figures/3d-side.jpg)](https://mert5961.github.io/SecondRead/)
+
 **It also works as a second reader.** 17 reports carry a deliberately wrong conclusion. With the large model,
 SecondRead flagged all 17, with one false alarm.
 
@@ -91,6 +96,7 @@ In a real pipeline the sizes would come from an imaging model, not report text. 
 | `make_cases.py` / `test_cases.py` | Synthetic patients, report text, gold labels |
 | `run_eval.py` | Both pipelines, extraction error tags, second-reader check |
 | `make_figures.py` | The two figures above, drawn from the saved results |
+| `export_3d.py` / `docs/` | Tumor and lung surfaces from the scan, and the three.js viewer |
 | `measure.py` / `repeat_scan.py` | CT + expert outline → longest diameter, short axis, volume → `recist.py` (needs pydicom, numpy, pillow) |
 </details>
 
